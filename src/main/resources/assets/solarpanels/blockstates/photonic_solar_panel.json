@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "solarpanels:block/photonic_solar_panel"
+    }
+  }
+}
