@@ -1,0 +1,13 @@
+{
+  "values": [
+    "solarpanels:advanced_solar_panel",
+    "solarpanels:creative_solar_panel",
+    "solarpanels:hybrid_solar_panel",
+    "solarpanels:light_absorbing_solar_panel",
+    "solarpanels:photonic_solar_panel",
+    "solarpanels:quantum_solar_panel",
+    "solarpanels:singular_solar_panel",
+    "solarpanels:spectral_solar_panel",
+    "solarpanels:ultimate_hybrid_solar_panel"
+  ]
+}
