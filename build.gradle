@@ -19,7 +19,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.spongepowered.mixin'
 
 
-version = '1.18.2-1.2-beta'
+version = '1.18.2-1.3'
 group = 'su.gamepoint.solarpanels'
 archivesBaseName = 'Mekanism-MoreSolarPanels'
 
@@ -108,6 +108,27 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
     flatDir { dirs 'libs' }
+
+    maven {
+        name = "Jared's maven"
+        url = "https://maven.blamejared.com/"
+    }
+
+    maven {
+        // Shedaniel's maven (Architectury API)
+        url = "https://maven.architectury.dev"
+        content {
+            includeGroup "dev.architectury"
+        }
+    }
+
+    maven {
+        // saps.dev Maven (KubeJS and Rhino)
+        url = "https://maven.saps.dev/minecraft"
+        content {
+            includeGroup "dev.latvian.mods"
+        }
+    }
 }
 
 dependencies {
@@ -117,9 +138,9 @@ dependencies {
     // Mekanism
     implementation fg.deobf("com.github.mekanism.mekanism:Mekanism:1.18.2-10.2.5.465")
     implementation fg.deobf("com.github.mekanism.mekanism:MekanismGenerators:1.18.2-10.2.5.465")
-    //implementation name: "Mekanism-1.18.2-10.2.5.465"
-    //implementation name: "MekanismGenerators-1.18.2-10.2.5.465"
 
+    // jei
+    runtimeOnly(fg.deobf("mezz.jei:jei-1.18.2-forge:10.2.1.1004"))
 }
 
 jar {

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "item": "solarpanels:singular_solar_element"
+  },
+  "pattern": [
+    "AAA",
+    "BBB",
+    "CCC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:pink_stained_glass_pane"
+    },
+    "B": {
+      "item": "mekanism:ingot_refined_glowstone"
+    },
+    "C": {
+      "item": "mekanism:hdpe_sheet"
+    }
+  }
+}

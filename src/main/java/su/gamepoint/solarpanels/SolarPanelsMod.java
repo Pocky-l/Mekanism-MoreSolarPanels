@@ -29,9 +29,6 @@ public class SolarPanelsMod {
         MekanismConfigHelper.registerConfig(modContainer, serverConfig);
         MekanismConfigHelper.registerConfig(modContainer, config);
 
-        //ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON,
-        //        ChatConfig.COMMON_CONFIG, "gamepoint\\GamePoint-Core.toml");
-
         BlockRegister.REGISTRY_BLOCK.register(eventBus);
         ItemRegister.ITEMS.register(eventBus);
 

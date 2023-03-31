@@ -7,5 +7,33 @@
   "block.solarpanels.singular_solar_panel": "Singular Solar Panel",
   "block.solarpanels.light_absorbing_solar_panel": "Light Absorbing Solar Panel",
   "block.solarpanels.photonic_solar_panel": "Photonic Solar Panel",
-  "block.solarpanels.creative_solar_panel": "Creative Solar Panel"
+  "block.solarpanels.creative_solar_panel": "Creative Solar Panel",
+
+  "container.solarpanels.advanced_solar_panel": "Advanced Solar Panel",
+  "container.solarpanels.hybrid_solar_panel": "Hybrid Solar Panel",
+  "container.solarpanels.ultimate_hybrid_solar_panel": "Ultimate Hybrid Solar Panel",
+  "container.solarpanels.quantum_solar_panel": "Quantum Solar Panel",
+  "container.solarpanels.spectral_solar_panel": "Spectral Solar Panel",
+  "container.solarpanels.singular_solar_panel": "Singular Solar Panel",
+  "container.solarpanels.light_absorbing_solar_panel": "Light Absorbing Solar Panel",
+  "container.solarpanels.photonic_solar_panel": "Photonic Solar Panel",
+  "container.solarpanels.creative_solar_panel": "Creative Solar Panel",
+
+  "item.solarpanels.quantum_solar_element": "Quantum Solar Element",
+  "item.solarpanels.light_absorbing_solar_element": "Light Absorbing Solar Element",
+  "item.solarpanels.singular_solar_element": "Singular Solar Element",
+  "item.solarpanels.carbone_solar_element": "Carbone Solar Element",
+  "item.solarpanels.hybrid_solar_element": "Hybrid Solar Element",
+  "item.solarpanels.spectral_solar_element": "Spectral Solar Element",
+  "item.solarpanels.photonic_solar_element": "Photonic Solar Element",
+  "item.solarpanels.creative_solar_element": "Creative Solar Element",
+  "item.solarpanels.improved_hybrid_solar_element": "Improved Hybrid Solar Element",
+
+  "item.solarpanels.light_absorbing_energy_tablet": "Light Absorbing Energy Tablet",
+  "item.solarpanels.spectral_energy_tablet": "Spectral Energy Tablet",
+  "item.solarpanels.photonic_energy_tablet": "Photonic Energy Tablet",
+  "item.solarpanels.quantum_energy_tablet": "Quantum Energy Tablet",
+  "item.solarpanels.creative_energy_tablet": "Creative Energy Tablet",
+  "item.solarpanels.improved_energy_tablet": "Improved Energy Tablet",
+  "item.solarpanels.singular_energy_tablet": "Singular Energy Tablet"
 }

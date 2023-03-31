@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "item": "solarpanels:singular_energy_tablet"
+  },
+  "pattern": [
+    "ABA",
+    "DCD",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "mekanism:elite_control_circuit"
+    },
+    "B": {
+      "item": "mekanism:enriched_gold"
+    },
+    "C": {
+      "item": "solarpanels:spectral_energy_tablet"
+    },
+    "D": {
+      "item": "mekanism:alloy_atomic"
+    }
+  }
+}

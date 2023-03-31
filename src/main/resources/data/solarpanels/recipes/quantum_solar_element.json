@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "item": "solarpanels:quantum_solar_element"
+  },
+  "pattern": [
+    "AAA",
+    "BBB",
+    "CCC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:purple_stained_glass_pane"
+    },
+    "B": {
+      "item": "mekanism:enriched_refined_obsidian"
+    },
+    "C": {
+      "item": "mekanism:hdpe_sheet"
+    }
+  }
+}

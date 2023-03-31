@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "item": "solarpanels:carbone_solar_element"
+  },
+  "pattern": [
+    "AAA",
+    "BBB",
+    "CCC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:black_stained_glass_pane"
+    },
+    "B": {
+      "item": "mekanism:dust_lapis_lazuli"
+    },
+    "C": {
+      "item": "mekanism:enriched_carbon"
+    }
+  }
+}

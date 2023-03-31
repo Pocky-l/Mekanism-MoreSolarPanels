@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "item": "solarpanels:photonic_solar_element"
+  },
+  "pattern": [
+    "AAA",
+    "BBB",
+    "CCC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:lime_stained_glass_pane"
+    },
+    "B": {
+      "item": "mekanism:crystal_uranium"
+    },
+    "C": {
+      "item": "minecraft:nether_star"
+    }
+  }
+}

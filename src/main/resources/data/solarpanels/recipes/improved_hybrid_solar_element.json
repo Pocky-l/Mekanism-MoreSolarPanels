@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "item": "solarpanels:improved_hybrid_solar_element"
+  },
+  "pattern": [
+    "AAA",
+    "BBB",
+    "CCC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:glass_pane"
+    },
+    "B": {
+      "item": "mekanism:enriched_diamond"
+    },
+    "C": {
+      "item": "mekanism:hdpe_sheet"
+    }
+  }
+}

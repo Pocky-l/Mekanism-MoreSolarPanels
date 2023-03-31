@@ -1,0 +1,1 @@
+{  "type": "minecraft:crafting_shaped",  "result": {    "item": "solarpanels:spectral_solar_element"  },  "pattern": [    "AAA",    "BBB",    "CCC"  ],  "key": {    "A": {      "item": "minecraft:yellow_stained_glass_pane"    },    "B": {      "item": "mekanism:crystal_gold"    },    "C": {      "item": "mekanism:hdpe_sheet"    }  }}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "item": "solarpanels:photonic_solar_panel"
+  },
+  "pattern": [
+    "GGG",
+    "RAR",
+    "OCO"
+  ],
+  "key": {
+    "G": {
+      "item": "solarpanels:photonic_solar_element"
+    },
+    "O": {
+      "item": "mekanism:hdpe_sheet"
+    },
+    "R": {
+      "item": "mekanism:ingot_osmium"
+    },
+    "A": {
+      "item": "solarpanels:light_absorbing_solar_panel"
+    },
+    "C": {
+      "item": "solarpanels:photonic_energy_tablet"
+    }
+  }
+}

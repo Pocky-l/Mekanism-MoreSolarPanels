@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": {
+    "item": "solarpanels:hybrid_solar_panel"
+  },
+  "pattern": [
+    "GGG",
+    "RAR",
+    "OCO"
+  ],
+  "key": {
+    "G": {
+      "item": "solarpanels:hybrid_solar_element"
+    },
+    "O": {
+      "item": "mekanism:advanced_control_circuit"
+    },
+    "R": {
+      "item": "mekanism:ingot_osmium"
+    },
+    "A": {
+      "item": "solarpanels:advanced_solar_panel"
+    },
+    "C": {
+      "item": "mekanism:energy_tablet"
+    }
+  }
+}

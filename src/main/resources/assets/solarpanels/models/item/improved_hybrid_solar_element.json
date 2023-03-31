@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "solarpanels:item/improved_hybrid_solar_element"
+  }
+}

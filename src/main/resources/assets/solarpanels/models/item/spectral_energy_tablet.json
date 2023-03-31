@@ -1,0 +1,1 @@
+{  "parent": "minecraft:item/generated",  "textures": {    "layer0": "solarpanels:item/spectral_energy_tablet"  }}

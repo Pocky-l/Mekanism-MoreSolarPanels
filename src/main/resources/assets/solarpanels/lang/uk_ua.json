@@ -7,5 +7,33 @@
   "block.solarpanels.singular_solar_panel": "Сингулярна сонячна панель",
   "block.solarpanels.light_absorbing_solar_panel": "Світлопоглинаюча сонячна панель",
   "block.solarpanels.photonic_solar_panel": "Фотонна сонячна панель",
-  "block.solarpanels.creative_solar_panel": "Творча сонячна панель"
+  "block.solarpanels.creative_solar_panel": "Творча сонячна панель",
+
+  "container.solarpanels.advanced_solar_panel": "Покращена сонячна панель",
+  "container.solarpanels.hybrid_solar_panel": "Гібридна сонячна панель",
+  "container.solarpanels.ultimate_hybrid_solar_panel": "Ультимативна гібридна сонячна панель",
+  "container.solarpanels.quantum_solar_panel": "Квантова сонячна панель",
+  "container.solarpanels.spectral_solar_panel": "Спектральна сонячна панель",
+  "container.solarpanels.singular_solar_panel": "Сингулярна сонячна панель",
+  "container.solarpanels.light_absorbing_solar_panel": "Світлопоглинаюча сонячна панель",
+  "container.solarpanels.photonic_solar_panel": "Фотонна сонячна панель",
+  "container.solarpanels.creative_solar_panel": "Творча сонячна панель",
+
+  "item.solarpanels.quantum_solar_element": "Квантовий сонячний елемент",
+  "item.solarpanels.light_absorbing_solar_element": "Світлопоглинаючий сонячний елемент",
+  "item.solarpanels.singular_solar_element": "Сингулярний сонячний елемент",
+  "item.solarpanels.carbone_solar_element": "Вуглецевий сонячний елемент",
+  "item.solarpanels.hybrid_solar_element": "Гібридний сонячний елемент",
+  "item.solarpanels.spectral_solar_element": "Спектральний сонячний елемент",
+  "item.solarpanels.photonic_solar_element": "Фотонний сонячний елемент",
+  "item.solarpanels.creative_solar_element": "Креативний сонячний елемент",
+  "item.solarpanels.improved_hybrid_solar_element": "Покращений гібридний сонячний елемент",
+
+  "item.solarpanels.light_absorbing_energy_tablet": "Світлопоглинаючий планшет енергії",
+  "item.solarpanels.spectral_energy_tablet": "Спектральний планшет енергії",
+  "item.solarpanels.photonic_energy_tablet": "Фотонний планшет енергії",
+  "item.solarpanels.quantum_energy_tablet": "Квантовий планшет енергії",
+  "item.solarpanels.creative_energy_tablet": "Креативний планшет енергії",
+  "item.solarpanels.improved_energy_tablet": "Покращений планшет енергії",
+  "item.solarpanels.singular_energy_tablet": "Сингулярний планшет енергії"
 }
