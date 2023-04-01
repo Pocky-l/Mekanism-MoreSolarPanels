@@ -49,7 +49,7 @@ public class SpectralSolarPanelTile extends TileEntityGenerator {
     }
 
     protected SpectralSolarPanelTile(IBlockProvider blockProvider, BlockPos pos, BlockState state, @Nonnull FloatingLong output) {
-        super(blockProvider, pos, state, output);
+        super(blockProvider, pos, state, () -> output);
         this.peakOutput = FloatingLong.ZERO;
         this.lastProductionAmount = FloatingLong.ZERO;
     }

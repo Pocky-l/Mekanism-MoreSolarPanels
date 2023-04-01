@@ -49,7 +49,7 @@ public class SingularSolarPanelTile extends TileEntityGenerator {
     }
 
     protected SingularSolarPanelTile(IBlockProvider blockProvider, BlockPos pos, BlockState state, @Nonnull FloatingLong output) {
-        super(blockProvider, pos, state, output);
+        super(blockProvider, pos, state, () -> output);
         this.peakOutput = FloatingLong.ZERO;
         this.lastProductionAmount = FloatingLong.ZERO;
     }

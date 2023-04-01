@@ -49,7 +49,7 @@ public class CreativeSolarPanelTile extends TileEntityGenerator {
     }
 
     protected CreativeSolarPanelTile(IBlockProvider blockProvider, BlockPos pos, BlockState state, @Nonnull FloatingLong output) {
-        super(blockProvider, pos, state, output);
+        super(blockProvider, pos, state, () -> output);
         this.peakOutput = FloatingLong.ZERO;
         this.lastProductionAmount = FloatingLong.ZERO;
     }
