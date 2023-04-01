@@ -4,7 +4,6 @@ import mekanism.api.Upgrade;
 import mekanism.common.block.attribute.Attribute;
 import mekanism.common.block.attribute.Attributes;
 import mekanism.generators.common.GeneratorsLang;
-import mekanism.generators.common.content.blocktype.BlockShapes;
 import mekanism.generators.common.content.blocktype.Generator;
 import mekanism.generators.common.registries.GeneratorsSounds;
 import su.gamepoint.solarpanels.SolarPanelsMod;
@@ -23,7 +22,7 @@ public class SolarTypes {
         return SolarContainerTypes.ADVANCED_SOLAR_PANEL;
     })
             .withEnergyConfig(SolarPanelsMod.getServerConfig().advancedSolarPanel)
-            .withCustomShape(BlockShapes.SOLAR_GENERATOR))
+            .withCustomShape(SolarShapes.ADVANCED_SOLAR_PANEL))
             .withSound(GeneratorsSounds.SOLAR_GENERATOR)
             .withSupportedUpgrades(EnumSet.of(Upgrade.MUFFLING))
             .withComputerSupport("solarGenerator")
@@ -35,7 +34,7 @@ public class SolarTypes {
                 return SolarContainerTypes.HYBRID_SOLAR_PANEL;
             })
             .withEnergyConfig(SolarPanelsMod.getServerConfig().hybridSolarPanel)
-            .withCustomShape(BlockShapes.SOLAR_GENERATOR))
+            .withCustomShape(SolarShapes.HYBRID_SOLAR_PANEL))
             .withSound(GeneratorsSounds.SOLAR_GENERATOR)
             .withSupportedUpgrades(EnumSet.of(Upgrade.MUFFLING))
             .withComputerSupport("solarGenerator")
@@ -47,7 +46,7 @@ public class SolarTypes {
                 return SolarContainerTypes.ULTIMATE_HYBRID_SOLAR_PANEL;
             })
             .withEnergyConfig(SolarPanelsMod.getServerConfig().ultimateHybridSolarPanel)
-            .withCustomShape(BlockShapes.SOLAR_GENERATOR))
+            .withCustomShape(SolarShapes.ULTIMATE_HYBRID_SOLAR_PANEL))
             .withSound(GeneratorsSounds.SOLAR_GENERATOR)
             .withSupportedUpgrades(EnumSet.of(Upgrade.MUFFLING))
             .withComputerSupport("solarGenerator")
@@ -59,7 +58,7 @@ public class SolarTypes {
                 return SolarContainerTypes.QUANTUM_SOLAR_PANEL;
             })
             .withEnergyConfig(SolarPanelsMod.getServerConfig().quantumSolarPanel)
-            .withCustomShape(BlockShapes.SOLAR_GENERATOR))
+            .withCustomShape(SolarShapes.QUANTUM_SOLAR_PANEL))
             .withSound(GeneratorsSounds.SOLAR_GENERATOR)
             .withSupportedUpgrades(EnumSet.of(Upgrade.MUFFLING))
             .withComputerSupport("solarGenerator")
@@ -71,7 +70,7 @@ public class SolarTypes {
                 return SolarContainerTypes.SPECTRAL_SOLAR_PANEL;
             })
             .withEnergyConfig(SolarPanelsMod.getServerConfig().spectralSolarPanel)
-            .withCustomShape(BlockShapes.SOLAR_GENERATOR))
+            .withCustomShape(SolarShapes.SPECTRAL_SOLAR_PANEL))
             .withSound(GeneratorsSounds.SOLAR_GENERATOR)
             .withSupportedUpgrades(EnumSet.of(Upgrade.MUFFLING))
             .withComputerSupport("solarGenerator")
@@ -83,7 +82,7 @@ public class SolarTypes {
                 return SolarContainerTypes.SINGULAR_SOLAR_PANEL;
             })
             .withEnergyConfig(SolarPanelsMod.getServerConfig().singularSolarPanel)
-            .withCustomShape(BlockShapes.SOLAR_GENERATOR))
+            .withCustomShape(SolarShapes.SINGULAR_SOLAR_PANEL))
             .withSound(GeneratorsSounds.SOLAR_GENERATOR)
             .withSupportedUpgrades(EnumSet.of(Upgrade.MUFFLING))
             .withComputerSupport("solarGenerator")
@@ -95,7 +94,7 @@ public class SolarTypes {
                 return SolarContainerTypes.LIGHT_ABSORBING_SOLAR_PANEL;
             })
             .withEnergyConfig(SolarPanelsMod.getServerConfig().lightAbsorbingSolarPanel)
-            .withCustomShape(BlockShapes.SOLAR_GENERATOR))
+            .withCustomShape(SolarShapes.LIGHT_ABSORBING_SOLAR_PANEL))
             .withSound(GeneratorsSounds.SOLAR_GENERATOR)
             .withSupportedUpgrades(EnumSet.of(Upgrade.MUFFLING))
             .withComputerSupport("solarGenerator")
@@ -107,7 +106,7 @@ public class SolarTypes {
                 return SolarContainerTypes.PHOTONIC_SOLAR_PANEL;
             })
             .withEnergyConfig(SolarPanelsMod.getServerConfig().photonicSolarPanel)
-            .withCustomShape(BlockShapes.SOLAR_GENERATOR))
+            .withCustomShape(SolarShapes.PHOTONIC_SOLAR_PANEL))
             .withSound(GeneratorsSounds.SOLAR_GENERATOR)
             .withSupportedUpgrades(EnumSet.of(Upgrade.MUFFLING))
             .withComputerSupport("solarGenerator")
@@ -119,7 +118,7 @@ public class SolarTypes {
                 return SolarContainerTypes.CREATIVE_SOLAR_PANEL;
             })
             .withEnergyConfig(SolarPanelsMod.getServerConfig().creativeSolarPanel)
-            .withCustomShape(BlockShapes.SOLAR_GENERATOR))
+            .withCustomShape(SolarShapes.CREATIVE_SOLAR_PANEL))
             .withSound(GeneratorsSounds.SOLAR_GENERATOR)
             .withSupportedUpgrades(EnumSet.of(Upgrade.MUFFLING))
             .withComputerSupport("solarGenerator")
