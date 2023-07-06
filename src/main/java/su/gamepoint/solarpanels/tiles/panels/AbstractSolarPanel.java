@@ -100,6 +100,7 @@ public abstract class AbstractSolarPanel extends TileEntityGenerator {
     public FloatingLong getProduction() {
         if (this.level != null && this.solarCheck != null) {
             float brightness = this.getBrightnessMultiplier(this.level);
+            if (brightness < 0) return FloatingLong.ZERO;
             return this.getConfiguredMax().multiply(brightness * this.solarCheck.getGenerationMultiplier());
         } else {
             return FloatingLong.ZERO;

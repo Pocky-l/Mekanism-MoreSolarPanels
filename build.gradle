@@ -19,7 +19,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.spongepowered.mixin'
 
 
-version = '1.19.2-1.5'
+version = '1.19.2-1.5.1'
 group = 'su.gamepoint.solarpanels'
 archivesBaseName = 'Mekanism-MoreSolarPanels'
 
