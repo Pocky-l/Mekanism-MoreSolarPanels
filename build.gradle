@@ -19,7 +19,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.spongepowered.mixin'
 
 
-version = '1.19.2-1.5.1'
+version = '1.19.2-1.5.2'
 group = 'su.gamepoint.solarpanels'
 archivesBaseName = 'Mekanism-MoreSolarPanels'
 
@@ -117,11 +117,11 @@ repositories {
 
 dependencies {
 
-    minecraft 'net.minecraftforge:forge:1.19.2-43.2.0'
+    minecraft 'net.minecraftforge:forge:1.19.2-43.2.8'
 
     // Mekanism
-    implementation fg.deobf("com.github.mekanism.mekanism:Mekanism:1.19.2-10.3.8.477")
-    implementation fg.deobf("com.github.mekanism.mekanism:MekanismGenerators:1.19.2-10.3.8.477")
+    implementation fg.deobf("com.github.mekanism.mekanism:Mekanism:1.19.2-10.3.9.13")
+    implementation fg.deobf("com.github.mekanism.mekanism:MekanismGenerators:1.19.2-10.3.9.13")
 
     // jei
     runtimeOnly(fg.deobf("mezz.jei:jei-1.19.2-forge:11.6.0.1013"))
