@@ -35,5 +35,6 @@
   "item.solarpanels.quantum_energy_tablet": "Quantum Energy Tablet",
   "item.solarpanels.creative_energy_tablet": "Creative Energy Tablet",
   "item.solarpanels.improved_energy_tablet": "Improved Energy Tablet",
-  "item.solarpanels.singular_energy_tablet": "Singular Energy Tablet"
+  "item.solarpanels.singular_energy_tablet": "Singular Energy Tablet",
+  "itemGroup.solarpanels.solarpanels_tab": "MoreSolarPanels"
 }
