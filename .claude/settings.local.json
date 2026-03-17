@@ -22,7 +22,8 @@
       "Bash(cd \"C:/Users/rkush/OneDrive/Desktop/бобота/Mekanism Advanced Generators\" && JAVA_HOME=\"C:/Users/rkush/.jdks/temurin-21.0.6\" ./gradlew runClient --info 2>&1 | grep -i \"fml\\\\|early\\\\|window\\\\|display\\\\|opengl\\\\|lwjgl\" | head -20)",
       "Bash(cd:*)",
       "Bash(find:*)",
-      "Bash(cp:*)"
+      "Bash(cp:*)",
+      "Bash(./gradlew build:*)"
     ]
   }
 }
