@@ -1,22 +1,25 @@
-# Mekanism-MoreSolarPanels
-Mekanism MoreSolarPanels is a mod that adds new, powerful solar panels.
-You will have access to up to 9 new panels, including a creative one, beautiful models and textures included!
-Feel free to use this mod in your mod packs.
-The mod also has a configuration, so you can adjust the energy output to your liking, not limiting yourself to the author's numbers.
 
-![alt text](https://cdn.discordapp.com/attachments/825701368227954748/1090940678109925416/imgonline-com-ua-GIF-Animation-3yG8d5WbFOwbroA.gif)
+Installation information
+=======
 
-Here's some information about the panels:
-| Solar Panel Type              | Max Power Output | Energy Storage       |
-| ----------------------------- | ---------------- | -------------------- |
-| Advanced Solar Panel          | 150 J/t          | 288,000 Joules       |
-| Hybrid Solar Panel            | 450 J/t          | 864,000 Joules       |
-| Ultimate Hybrid Solar Panel   | 1,350 J/t        | 2,592,000 Joules     |
-| Quantum Solar Panel           | 4,050 J/t        | 7,776,000 Joules     |
-| Spectral Solar Panel          | 12,150 J/t       | 23,328,000 Joules    |
-| Singular Solar Panel          | 36,450 J/t       | 69,984,000 Joules    |
-| Light Absorbing Solar Panel   | 109,350 J/t      | 209,952,000 Joules   |
-| Photonic Solar Panel          | 328,050 J/t      | 629,856,000 Joules   |
-| Creative Solar Panel          | 10,000,000 J/t   | 2,000,000,000 Joules |
+This template repository can be directly cloned to get you started with a new
+mod. Simply create a new repository cloned from this one, by following the
+instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
 
-The mod will only work with Mekanism and Mekanism-Generators dependencies.
+Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+
+If at any point you are missing libraries in your IDE, or you've run into problems you can
+run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
+{this does not affect your code} and then start the process again.
+
+Mapping Names:
+============
+By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
+in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
+license. For the latest license text, refer to the mapping file itself, or the reference copy here:
+https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+
+Additional Resources: 
+==========
+Community Documentation: https://docs.neoforged.net/  
+NeoForged Discord: https://discord.neoforged.net/

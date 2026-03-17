@@ -1,0 +1,11 @@
+{
+  "tile.generator.solar": {
+    "sounds": [
+      {
+        "attenuation_distance": 8,
+        "name": "solarpanels:generator/solar"
+      }
+    ],
+    "subtitle": "sound_event.solarpanels.tile.generator.solar"
+  }
+}

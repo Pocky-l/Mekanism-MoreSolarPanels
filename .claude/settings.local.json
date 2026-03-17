@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find \"C:\\\\Users\\\\rkush\\\\OneDrive\\\\Desktop\\\\бобота\\\\Mekanism Advanced Generators/src\" -type f | grep -E \"\\\\.\\(java|toml|json|properties|lang\\)$\")",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:github.com)",
+      "WebSearch",
+      "Bash(cd \"C:/Users/rkush/OneDrive/Desktop/бобота/Mekanism Advanced Generators\" && ./gradlew runClient --info 2>&1 | grep -i \"timeout\\\\|connect\\\\|download\\\\|repository\" | head -50)",
+      "Bash(cd \"C:/Users/rkush/OneDrive/Desktop/бобота/Mekanism Advanced Generators\" && ./gradlew --stop 2>&1)",
+      "Bash(cd \"C:/Users/rkush/OneDrive/Desktop/бобота/Mekanism Advanced Generators\" && ./gradlew runClient --info 2>&1 | grep -i \"timeout\\\\|timed out\\\\|connect\\\\|downloading\\\\|repository\\\\|http\" | head -60)",
+      "Bash(cd \"C:/Users/rkush/OneDrive/Desktop/бобота/Mekanism Advanced Generators\" && ./gradlew runClient 2>&1 | tail -40)",
+      "Bash(cd \"C:/Users/rkush/OneDrive/Desktop/бобота/Mekanism Advanced Generators\" && JAVA_HOME=\"C:/Users/rkush/.jdks/temurin-21.0.6\" ./gradlew runClient 2>&1 | tail -50)",
+      "Bash(cd \"C:/Users/rkush/OneDrive/Desktop/бобота/Mekanism Advanced Generators\" && ./gradlew --stop 2>&1 && JAVA_HOME=\"C:/Users/rkush/.jdks/temurin-21.0.6\" ./gradlew runClient 2>&1 | tail -20)",
+      "Bash(cd \"C:/Users/rkush/OneDrive/Desktop/бобота/Mekanism Advanced Generators\" && ./gradlew runClient 2>&1 | tail -20)",
+      "Bash(mkdir -p \"C:/Users/rkush/OneDrive/Desktop/бобота/Mekanism Advanced Generators/libs\" && curl -L -o \"C:/Users/rkush/OneDrive/Desktop/бобота/Mekanism Advanced Generators/libs/Mekanism-1.21.1-10.7.18.84.jar\" \"https://modmaven.dev/mekanism/Mekanism/1.21.1-10.7.18.84/Mekanism-1.21.1-10.7.18.84.jar\" 2>&1 | tail -5)",
+      "Bash(curl -L -o \"C:/Users/rkush/OneDrive/Desktop/бобота/Mekanism Advanced Generators/libs/Mekanism-1.21.1-10.7.18.84-generators.jar\" \"https://modmaven.dev/mekanism/Mekanism/1.21.1-10.7.18.84/Mekanism-1.21.1-10.7.18.84-generators.jar\" 2>&1 | tail -5)",
+      "Bash(cd \"C:/Users/rkush/OneDrive/Desktop/бобота/Mekanism Advanced Generators\" && JAVA_HOME=\"C:/Users/rkush/.jdks/temurin-21.0.6\" ./gradlew --stop 2>&1 && JAVA_HOME=\"C:/Users/rkush/.jdks/temurin-21.0.6\" ./gradlew clean 2>&1 | tail -5)",
+      "Bash(ls -t \"C:/Users/rkush/.gradle/daemon/9.2.1/\"*.log 2>&1 | head -3 | xargs -I{} grep -i \"timeout\\\\|timed out\\\\|connect\\\\|exception\" {} | head -30)",
+      "Bash(cd \"C:/Users/rkush/OneDrive/Desktop/бобота/Mekanism Advanced Generators\" && JAVA_HOME=\"C:/Users/rkush/.jdks/temurin-21.0.6\" ./gradlew runClient 2>&1 | tail -15)",
+      "Bash(find \"C:/Users/rkush/OneDrive/Desktop/бобота/Mekanism Advanced Generators/.idea/runConfigurations\" -name \"*.xml\" 2>/dev/null | head -5 || find \"C:/Users/rkush/OneDrive/Desktop/бобота/Mekanism Advanced Generators/.idea\" -name \"*client*\" -o -name \"*run*\" 2>/dev/null | head -10)",
+      "Bash(cd \"C:/Users/rkush/OneDrive/Desktop/бобота/Mekanism Advanced Generators\" && JAVA_HOME=\"C:/Users/rkush/.jdks/temurin-21.0.6\" ./gradlew runClient --info 2>&1 | grep -i \"fml\\\\|early\\\\|window\\\\|display\\\\|opengl\\\\|lwjgl\" | head -20)",
+      "Bash(cd:*)",
+      "Bash(find:*)",
+      "Bash(cp:*)"
+    ]
+  }
+}

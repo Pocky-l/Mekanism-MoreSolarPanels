@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:item/generated",
+ "parent": "minecraft:item/generated",
   "textures": {
     "layer0": "solarpanels:item/carbone_solar_element"
   }
