@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": { "id": "mekanismadvancedgenerators:quantum_energy_tablet" },
+  "pattern": [ "ABA", "DCD", "ABA" ],
+  "key": {
+    "A": { "item": "mekanism:basic_control_circuit" },
+    "B": { "item": "mekanism:enriched_gold" },
+    "C": { "item": "mekanismadvancedgenerators:improved_energy_tablet" },
+    "D": { "item": "mekanism:alloy_reinforced" }
+  }
+}

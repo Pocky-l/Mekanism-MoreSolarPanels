@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": { "id": "mekanismadvancedgenerators:photonic_energy_tablet" },
+  "pattern": [ "ABA", "DCD", "ABA" ],
+  "key": {
+    "A": { "item": "mekanism:ultimate_control_circuit" },
+    "B": { "item": "mekanism:pellet_antimatter" },
+    "C": { "item": "mekanismadvancedgenerators:light_absorbing_energy_tablet" },
+    "D": { "item": "mekanism:alloy_atomic" }
+  }
+}

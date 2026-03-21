@@ -1,0 +1,7 @@
+
+  {
+ "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mekanismadvancedgenerators:item/enriched_ingot_osmium"
+  }
+}

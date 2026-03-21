@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": { "id": "mekanismadvancedgenerators:spectral_solar_panel" },
+  "pattern": [ "GGG", "RAR", "OCO" ],
+  "key": {
+    "G": { "item": "mekanismadvancedgenerators:spectral_solar_element" },
+    "O": { "item": "mekanism:hdpe_sheet" },
+    "R": { "item": "mekanism:ingot_osmium" },
+    "A": { "item": "mekanismadvancedgenerators:quantum_solar_panel" },
+    "C": { "item": "mekanismadvancedgenerators:spectral_energy_tablet" }
+  }
+}

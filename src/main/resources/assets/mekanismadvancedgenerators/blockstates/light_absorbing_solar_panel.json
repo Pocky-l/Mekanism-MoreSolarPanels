@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mekanismadvancedgenerators:block/light_absorbing_solar_panel"
+    }
+  }
+}

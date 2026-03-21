@@ -131,6 +131,26 @@ public abstract class TileEntityGenerator extends TileEntityMekanism {
     }
 
     @Override
+    public void setRemoved() {
+        super.setRemoved();
+        stopClientSound();
+    }
+
+    @Override
+    public void onChunkUnloaded() {
+        super.onChunkUnloaded();
+        stopClientSound();
+    }
+
+    private void stopClientSound() {
+        if (level != null && level.isClientSide && activeClientSound != null) {
+            Minecraft.getInstance().getSoundManager().stop(activeClientSound);
+            activeClientSound = null;
+            clientSoundCooldown = 0;
+        }
+    }
+
+    @Override
     protected void invalidateDirectionCaches(Direction newDirection) {
         super.invalidateDirectionCaches(newDirection);
         outputCaches = null;

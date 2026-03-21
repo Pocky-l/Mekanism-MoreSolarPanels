@@ -23,7 +23,17 @@
       "Bash(cd:*)",
       "Bash(find:*)",
       "Bash(cp:*)",
-      "Bash(./gradlew build:*)"
+      "Bash(./gradlew build:*)",
+      "Bash(jar tf:*)",
+      "Bash(xargs grep:*)",
+      "Bash(grep:*)",
+      "Bash(xargs sed:*)",
+      "Bash(while read:*)",
+      "Bash(do sed:*)",
+      "Bash(done)",
+      "Bash(mv assets/solarpanels assets/mekanismadvancedgenerators)",
+      "Bash(mv data/solarpanels data/mekanismadvancedgenerators)",
+      "Bash(grep -rl '\"\"solarpanels\"\"' src/)"
     ]
   }
 }

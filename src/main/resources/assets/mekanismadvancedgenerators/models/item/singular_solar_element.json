@@ -1,0 +1,6 @@
+{
+ "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mekanismadvancedgenerators:item/singular_solar_element"
+  }
+}

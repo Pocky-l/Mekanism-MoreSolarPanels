@@ -39,7 +39,7 @@ public class SolarConfig extends BaseMekanismConfig {
 
     @Override
     public String getFileName() {
-        return "solarpanels";
+        return "mekanismadvancedgenerators";
     }
 
     @Override

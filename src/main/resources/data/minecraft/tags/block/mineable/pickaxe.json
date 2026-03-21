@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "mekanismadvancedgenerators:advanced_solar_panel",
+    "mekanismadvancedgenerators:hybrid_solar_panel",
+    "mekanismadvancedgenerators:ultimate_solar_panel",
+    "mekanismadvancedgenerators:quantum_solar_panel",
+    "mekanismadvancedgenerators:spectral_solar_panel",
+    "mekanismadvancedgenerators:singular_solar_panel",
+    "mekanismadvancedgenerators:light_absorbing_solar_panel",
+    "mekanismadvancedgenerators:photonic_solar_panel",
+    "mekanismadvancedgenerators:creative_solar_panel"
+  ]
+}

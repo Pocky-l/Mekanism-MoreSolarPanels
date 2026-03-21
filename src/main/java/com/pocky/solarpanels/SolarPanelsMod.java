@@ -15,7 +15,7 @@ import net.neoforged.fml.common.Mod;
 @Mod(SolarPanelsMod.MODID)
 public class SolarPanelsMod {
 
-    public static final String MODID = "solarpanels";
+    public static final String MODID = "mekanismadvancedgenerators";
 
     public SolarPanelsMod(ModContainer modContainer, IEventBus modEventBus) {
         SolarPanelsConfig.registerConfigs(modContainer);

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": { "id": "mekanismadvancedgenerators:advanced_solar_panel" },
+  "pattern": [ "GGG", "RAR", "OCO" ],
+  "key": {
+    "G": { "item": "mekanismadvancedgenerators:carbone_solar_element" },
+    "O": { "item": "mekanism:basic_control_circuit" },
+    "R": { "item": "mekanism:ingot_osmium" },
+    "A": { "item": "mekanismgenerators:solar_generator" },
+    "C": { "item": "mekanism:energy_tablet" }
+  }
+}
