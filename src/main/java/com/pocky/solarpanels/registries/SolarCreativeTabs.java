@@ -35,7 +35,16 @@ public class SolarCreativeTabs {
                     SolarBlocks.SINGULAR_SOLAR_PANEL,
                     SolarBlocks.LIGHT_ABSORBING_SOLAR_PANEL,
                     SolarBlocks.PHOTONIC_SOLAR_PANEL,
-                    SolarBlocks.CREATIVE_SOLAR_PANEL
+                    SolarBlocks.CREATIVE_SOLAR_PANEL,
+                    SolarBlocks.BIG_ADVANCED_SOLAR_GENERATOR,
+                    SolarBlocks.BIG_HYBRID_SOLAR_GENERATOR,
+                    SolarBlocks.BIG_ULTIMATE_SOLAR_GENERATOR,
+                    SolarBlocks.BIG_QUANTUM_SOLAR_GENERATOR,
+                    SolarBlocks.BIG_SPECTRAL_SOLAR_GENERATOR,
+                    SolarBlocks.BIG_SINGULAR_SOLAR_GENERATOR,
+                    SolarBlocks.BIG_LIGHT_ABSORBING_SOLAR_GENERATOR,
+                    SolarBlocks.BIG_PHOTONIC_SOLAR_GENERATOR,
+                    SolarBlocks.BIG_CREATIVE_SOLAR_GENERATOR
             );
         } else if (tabKey == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             CreativeTabDeferredRegister.addToDisplay(event,

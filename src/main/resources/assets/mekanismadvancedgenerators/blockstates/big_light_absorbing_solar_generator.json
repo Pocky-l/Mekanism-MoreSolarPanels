@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mekanismadvancedgenerators:block/big_light_absorbing_solar_generator"
+    }
+  }
+}

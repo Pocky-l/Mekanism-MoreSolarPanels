@@ -31,4 +31,23 @@ public class SolarContainerTypes {
             CONTAINER_TYPES.custom("photonic_solar_panel", TileEntitySolarGenerator.class).armorSideBar(-20, 11, 0).build();
     public static final ContainerTypeRegistryObject<MekanismTileContainer<TileEntitySolarGenerator>> CREATIVE_SOLAR_PANEL =
             CONTAINER_TYPES.custom("creative_solar_panel", TileEntitySolarGenerator.class).armorSideBar(-20, 11, 0).build();
+
+    public static final ContainerTypeRegistryObject<MekanismTileContainer<TileEntitySolarGenerator>> BIG_ADVANCED_SOLAR_GENERATOR =
+            CONTAINER_TYPES.custom("big_advanced_solar_generator", TileEntitySolarGenerator.class).armorSideBar(-20, 11, 0).build();
+    public static final ContainerTypeRegistryObject<MekanismTileContainer<TileEntitySolarGenerator>> BIG_HYBRID_SOLAR_GENERATOR =
+            CONTAINER_TYPES.custom("big_hybrid_solar_generator", TileEntitySolarGenerator.class).armorSideBar(-20, 11, 0).build();
+    public static final ContainerTypeRegistryObject<MekanismTileContainer<TileEntitySolarGenerator>> BIG_ULTIMATE_SOLAR_GENERATOR =
+            CONTAINER_TYPES.custom("big_ultimate_solar_generator", TileEntitySolarGenerator.class).armorSideBar(-20, 11, 0).build();
+    public static final ContainerTypeRegistryObject<MekanismTileContainer<TileEntitySolarGenerator>> BIG_QUANTUM_SOLAR_GENERATOR =
+            CONTAINER_TYPES.custom("big_quantum_solar_generator", TileEntitySolarGenerator.class).armorSideBar(-20, 11, 0).build();
+    public static final ContainerTypeRegistryObject<MekanismTileContainer<TileEntitySolarGenerator>> BIG_SPECTRAL_SOLAR_GENERATOR =
+            CONTAINER_TYPES.custom("big_spectral_solar_generator", TileEntitySolarGenerator.class).armorSideBar(-20, 11, 0).build();
+    public static final ContainerTypeRegistryObject<MekanismTileContainer<TileEntitySolarGenerator>> BIG_SINGULAR_SOLAR_GENERATOR =
+            CONTAINER_TYPES.custom("big_singular_solar_generator", TileEntitySolarGenerator.class).armorSideBar(-20, 11, 0).build();
+    public static final ContainerTypeRegistryObject<MekanismTileContainer<TileEntitySolarGenerator>> BIG_LIGHT_ABSORBING_SOLAR_GENERATOR =
+            CONTAINER_TYPES.custom("big_light_absorbing_solar_generator", TileEntitySolarGenerator.class).armorSideBar(-20, 11, 0).build();
+    public static final ContainerTypeRegistryObject<MekanismTileContainer<TileEntitySolarGenerator>> BIG_PHOTONIC_SOLAR_GENERATOR =
+            CONTAINER_TYPES.custom("big_photonic_solar_generator", TileEntitySolarGenerator.class).armorSideBar(-20, 11, 0).build();
+    public static final ContainerTypeRegistryObject<MekanismTileContainer<TileEntitySolarGenerator>> BIG_CREATIVE_SOLAR_GENERATOR =
+            CONTAINER_TYPES.custom("big_creative_solar_generator", TileEntitySolarGenerator.class).armorSideBar(-20, 11, 0).build();
 }

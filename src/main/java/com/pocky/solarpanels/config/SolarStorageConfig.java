@@ -19,6 +19,16 @@ public class SolarStorageConfig extends BaseMekanismConfig {
     public final CachedLongValue photonicSolarGenerator;
     public final CachedLongValue creativeSolarGenerator;
 
+    public final CachedLongValue bigAdvancedSolarGenerator;
+    public final CachedLongValue bigHybridSolarGenerator;
+    public final CachedLongValue bigUltimateSolarGenerator;
+    public final CachedLongValue bigQuantumSolarGenerator;
+    public final CachedLongValue bigSpectralSolarGenerator;
+    public final CachedLongValue bigSingularSolarGenerator;
+    public final CachedLongValue bigLightAbsorbingSolarGenerator;
+    public final CachedLongValue bigPhotonicSolarGenerator;
+    public final CachedLongValue bigCreativeSolarGenerator;
+
     SolarStorageConfig() {
         ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
 
@@ -31,6 +41,15 @@ public class SolarStorageConfig extends BaseMekanismConfig {
         lightAbsorbingSolarGenerator = CachedLongValue.definedMin(this, builder, SolarConfigTranslations.ENERGY_STORAGE_GENERATOR_SOLAR, "lightAbsorbingSolarGenerator", 209_952_000L, 1);
         photonicSolarGenerator = CachedLongValue.definedMin(this, builder, SolarConfigTranslations.ENERGY_STORAGE_GENERATOR_SOLAR, "photonicSolarGenerator", 629_856_000L, 1);
         creativeSolarGenerator = CachedLongValue.definedMin(this, builder, SolarConfigTranslations.ENERGY_STORAGE_GENERATOR_SOLAR, "creativeSolarGenerator", 2_000_000_000L, 1);
+        bigAdvancedSolarGenerator = CachedLongValue.definedMin(this, builder, SolarConfigTranslations.ENERGY_STORAGE_GENERATOR_SOLAR, "bigAdvancedSolarGenerator", 1_728_000L, 1);
+        bigHybridSolarGenerator = CachedLongValue.definedMin(this, builder, SolarConfigTranslations.ENERGY_STORAGE_GENERATOR_SOLAR, "bigHybridSolarGenerator", 5_184_000L, 1);
+        bigUltimateSolarGenerator = CachedLongValue.definedMin(this, builder, SolarConfigTranslations.ENERGY_STORAGE_GENERATOR_SOLAR, "bigUltimateSolarGenerator", 15_552_000L, 1);
+        bigQuantumSolarGenerator = CachedLongValue.definedMin(this, builder, SolarConfigTranslations.ENERGY_STORAGE_GENERATOR_SOLAR, "bigQuantumSolarGenerator", 46_656_000L, 1);
+        bigSpectralSolarGenerator = CachedLongValue.definedMin(this, builder, SolarConfigTranslations.ENERGY_STORAGE_GENERATOR_SOLAR, "bigSpectralSolarGenerator", 139_968_000L, 1);
+        bigSingularSolarGenerator = CachedLongValue.definedMin(this, builder, SolarConfigTranslations.ENERGY_STORAGE_GENERATOR_SOLAR, "bigSingularSolarGenerator", 419_904_000L, 1);
+        bigLightAbsorbingSolarGenerator = CachedLongValue.definedMin(this, builder, SolarConfigTranslations.ENERGY_STORAGE_GENERATOR_SOLAR, "bigLightAbsorbingSolarGenerator", 1_259_712_000L, 1);
+        bigPhotonicSolarGenerator = CachedLongValue.definedMin(this, builder, SolarConfigTranslations.ENERGY_STORAGE_GENERATOR_SOLAR, "bigPhotonicSolarGenerator", 3_779_136_000L, 1);
+        bigCreativeSolarGenerator = CachedLongValue.definedMin(this, builder, SolarConfigTranslations.ENERGY_STORAGE_GENERATOR_SOLAR, "bigCreativeSolarGenerator", 12_000_000_000L, 1);
 
         configSpec = builder.build();
     }

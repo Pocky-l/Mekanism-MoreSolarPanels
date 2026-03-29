@@ -11,6 +11,16 @@
   "block.mekanismadvancedgenerators.photonic_solar_panel": "Photonic Solar Panel",
   "block.mekanismadvancedgenerators.creative_solar_panel": "Creative Solar Panel",
 
+  "block.mekanismadvancedgenerators.big_advanced_solar_generator": "Big Advanced Solar Generator",
+  "block.mekanismadvancedgenerators.big_hybrid_solar_generator": "Big Hybrid Solar Generator",
+  "block.mekanismadvancedgenerators.big_ultimate_solar_generator": "Big Ultimate Solar Generator",
+  "block.mekanismadvancedgenerators.big_quantum_solar_generator": "Big Quantum Solar Generator",
+  "block.mekanismadvancedgenerators.big_spectral_solar_generator": "Big Spectral Solar Generator",
+  "block.mekanismadvancedgenerators.big_singular_solar_generator": "Big Singular Solar Generator",
+  "block.mekanismadvancedgenerators.big_light_absorbing_solar_generator": "Big Light Absorbing Solar Generator",
+  "block.mekanismadvancedgenerators.big_photonic_solar_generator": "Big Photonic Solar Generator",
+  "block.mekanismadvancedgenerators.big_creative_solar_generator": "Big Creative Solar Generator",
+
   "container.mekanismadvancedgenerators.advanced_solar_panel": "Advanced Solar Panel",
   "container.mekanismadvancedgenerators.hybrid_solar_panel": "Hybrid Solar Panel",
   "container.mekanismadvancedgenerators.ultimate_solar_panel": "Ultimate Hybrid Solar Panel",
@@ -20,6 +30,16 @@
   "container.mekanismadvancedgenerators.light_absorbing_solar_panel": "Light Absorbing Solar Panel",
   "container.mekanismadvancedgenerators.photonic_solar_panel": "Photonic Solar Panel",
   "container.mekanismadvancedgenerators.creative_solar_panel": "Creative Solar Panel",
+
+  "container.mekanismadvancedgenerators.big_advanced_solar_generator": "Big Advanced Solar Generator",
+  "container.mekanismadvancedgenerators.big_hybrid_solar_generator": "Big Hybrid Solar Generator",
+  "container.mekanismadvancedgenerators.big_ultimate_solar_generator": "Big Ultimate Solar Generator",
+  "container.mekanismadvancedgenerators.big_quantum_solar_generator": "Big Quantum Solar Generator",
+  "container.mekanismadvancedgenerators.big_spectral_solar_generator": "Big Spectral Solar Generator",
+  "container.mekanismadvancedgenerators.big_singular_solar_generator": "Big Singular Solar Generator",
+  "container.mekanismadvancedgenerators.big_light_absorbing_solar_generator": "Big Light Absorbing Solar Generator",
+  "container.mekanismadvancedgenerators.big_photonic_solar_generator": "Big Photonic Solar Generator",
+  "container.mekanismadvancedgenerators.big_creative_solar_generator": "Big Creative Solar Generator",
 
   "description.mekanismadvancedgenerators.solar_generator": "A solar panel that generates energy from sunlight.",
 

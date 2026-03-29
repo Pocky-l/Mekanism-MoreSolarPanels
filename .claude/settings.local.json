@@ -33,7 +33,31 @@
       "Bash(done)",
       "Bash(mv assets/solarpanels assets/mekanismadvancedgenerators)",
       "Bash(mv data/solarpanels data/mekanismadvancedgenerators)",
-      "Bash(grep -rl '\"\"solarpanels\"\"' src/)"
+      "Bash(grep -rl '\"\"solarpanels\"\"' src/)",
+      "Bash(where java:*)",
+      "Read(//c/Program Files/Java/**)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Users/rkush/.gradle/jdks/**)",
+      "Bash(\"C:/Program Files/Java/jdk-24/bin/java\" -version)",
+      "Bash(JAVA_HOME=\"C:/Users/rkush/.gradle/jdks/eclipse_adoptium-21-amd64-windows/jdk-21.0.4+7\" ./gradlew build)",
+      "Bash(cp \"C:\\\\Users\\\\rkush\\\\OneDrive\\\\Desktop\\\\MyMods\\\\Mekanism-AdvancedGenerators-1-20-1\\\\src\\\\tools\\\\resources\\\\assets\\\\mekanismadvancedgenerators\\\\models\\\\block\\\\big_advanced_solar_generator.json\" \"C:\\\\Users\\\\rkush\\\\OneDrive\\\\Desktop\\\\бобота\\\\Mekanism Advanced Generators\\\\src\\\\main\\\\resources\\\\assets\\\\mekanismadvancedgenerators\\\\models\\\\block\\\\big_advanced_solar_generator.json\")",
+      "Bash(cp \"C:\\\\Users\\\\rkush\\\\OneDrive\\\\Desktop\\\\MyMods\\\\Mekanism-AdvancedGenerators-1-20-1\\\\src\\\\tools\\\\resources\\\\assets\\\\mekanismadvancedgenerators\\\\models\\\\block\\\\big_hybrid_solar_generator.json\" \"C:\\\\Users\\\\rkush\\\\OneDrive\\\\Desktop\\\\бобота\\\\Mekanism Advanced Generators\\\\src\\\\main\\\\resources\\\\assets\\\\mekanismadvancedgenerators\\\\models\\\\block\\\\big_hybrid_solar_generator.json\")",
+      "Bash(cp \"C:\\\\Users\\\\rkush\\\\OneDrive\\\\Desktop\\\\MyMods\\\\Mekanism-AdvancedGenerators-1-20-1\\\\src\\\\tools\\\\resources\\\\assets\\\\mekanismadvancedgenerators\\\\models\\\\block\\\\big_ultimate_solar_generator.json\" \"C:\\\\Users\\\\rkush\\\\OneDrive\\\\Desktop\\\\бобота\\\\Mekanism Advanced Generators\\\\src\\\\main\\\\resources\\\\assets\\\\mekanismadvancedgenerators\\\\models\\\\block\\\\big_ultimate_solar_generator.json\")",
+      "Bash(cp \"C:\\\\Users\\\\rkush\\\\OneDrive\\\\Desktop\\\\MyMods\\\\Mekanism-AdvancedGenerators-1-20-1\\\\src\\\\tools\\\\resources\\\\assets\\\\mekanismadvancedgenerators\\\\models\\\\block\\\\big_quantum_solar_generator.json\" \"C:\\\\Users\\\\rkush\\\\OneDrive\\\\Desktop\\\\бобота\\\\Mekanism Advanced Generators\\\\src\\\\main\\\\resources\\\\assets\\\\mekanismadvancedgenerators\\\\models\\\\block\\\\big_quantum_solar_generator.json\")",
+      "Bash(cp \"C:\\\\Users\\\\rkush\\\\OneDrive\\\\Desktop\\\\MyMods\\\\Mekanism-AdvancedGenerators-1-20-1\\\\src\\\\tools\\\\resources\\\\assets\\\\mekanismadvancedgenerators\\\\models\\\\block\\\\big_spectral_solar_generator.json\" \"C:\\\\Users\\\\rkush\\\\OneDrive\\\\Desktop\\\\бобота\\\\Mekanism Advanced Generators\\\\src\\\\main\\\\resources\\\\assets\\\\mekanismadvancedgenerators\\\\models\\\\block\\\\big_spectral_solar_generator.json\")",
+      "Bash(SRC=\"C:\\\\Users\\\\rkush\\\\OneDrive\\\\Desktop\\\\MyMods\\\\Mekanism-AdvancedGenerators-1-20-1\\\\src\\\\tools\\\\resources\\\\assets\\\\mekanismadvancedgenerators\\\\textures\\\\block\\\\model\")",
+      "Bash(DST=\"C:\\\\Users\\\\rkush\\\\OneDrive\\\\Desktop\\\\бобота\\\\Mekanism Advanced Generators\\\\src\\\\main\\\\resources\\\\assets\\\\mekanismadvancedgenerators\\\\textures\\\\block\\\\model\")",
+      "Bash(for f:*)",
+      "Bash(do)",
+      "Bash(cp \"$SRC/$f.png\" \"$DST/$f.png\")",
+      "Bash(./gradlew compileJava)",
+      "Bash(JAVA_HOME=\"/c/Program Files/Eclipse Adoptium/jdk-21.0.7.6-hotspot\" ./gradlew compileJava)",
+      "Bash(cmd /c \"where java\")",
+      "Bash(cmd /c \"java -version\")",
+      "Bash(cmd /c \"gradlew.bat compileJava 2>&1\")",
+      "Bash(powershell -Command \"Set-Location 'C:\\\\Users\\\\rkush\\\\OneDrive\\\\Desktop\\\\бобота\\\\Mekanism Advanced Generators'; .\\\\gradlew.bat compileJava 2>&1 | Select-Object -Last 60\")",
+      "Bash(powershell -Command \"Get-ChildItem 'C:\\\\Program Files\\\\Java\\\\' -ErrorAction SilentlyContinue; Get-ChildItem 'C:\\\\Program Files\\\\Eclipse Adoptium\\\\' -ErrorAction SilentlyContinue; Get-ChildItem 'C:\\\\Program Files\\\\Microsoft\\\\' -ErrorAction SilentlyContinue | Where-Object {$_.Name -like '*jdk*'}\")",
+      "Bash(powershell -Command \"Set-Location 'C:\\\\Users\\\\rkush\\\\OneDrive\\\\Desktop\\\\бобота\\\\Mekanism Advanced Generators'; \\\\$env:JAVA_HOME='C:\\\\Program Files\\\\Java\\\\jdk-24'; .\\\\gradlew.bat compileJava 2>&1 | Select-Object -Last 60\")"
     ]
   }
 }

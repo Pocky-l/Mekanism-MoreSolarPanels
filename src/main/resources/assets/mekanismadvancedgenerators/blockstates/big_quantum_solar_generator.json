@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mekanismadvancedgenerators:block/big_quantum_solar_generator"
+    }
+  }
+}
