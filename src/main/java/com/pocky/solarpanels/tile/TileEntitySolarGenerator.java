@@ -133,7 +133,7 @@ public abstract class TileEntitySolarGenerator extends TileEntityGenerator {
             this.pos = pos;
             Biome b = this.world.getBiomeManager().getBiome(this.pos).value();
             needsRainCheck = b.getPrecipitationAt(this.pos) != Precipitation.NONE;
-            float tempEff = 0.3F * (0.8F - b.getModifiedClimateSettings().temperature());
+            float tempEff = 0.3F * (0.8F - b.getTemperature(this.pos));
             float humidityEff = needsRainCheck ? -0.3F * b.getModifiedClimateSettings().downfall() : 0;
             peakMultiplier = 1.0F + tempEff + humidityEff;
         }

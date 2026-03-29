@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": { "id": "mekanismadvancedgenerators:big_photonic_solar_generator" },
+  "pattern": [ "AOA", "AOA", "RRR" ],
+  "key": {
+    "A": { "item": "mekanismadvancedgenerators:photonic_solar_panel" },
+    "O": { "item": "mekanism:hdpe_sheet" },
+    "R": { "item": "mekanism:ingot_osmium" }
+  }
+}

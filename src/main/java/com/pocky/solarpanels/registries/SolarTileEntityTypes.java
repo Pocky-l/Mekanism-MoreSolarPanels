@@ -83,6 +83,7 @@ public class SolarTileEntityTypes {
                     .clientTicker(TileEntityMekanism::tickClient)
                     .serverTicker(TileEntityMekanism::tickServer)
                     .withSimple(Capabilities.CONFIG_CARD)
+                    .withSimple(Capabilities.EVAPORATION_SOLAR)
                     .build();
 
     public static final TileEntityTypeRegistryObject<TileEntityBigSolarGenerators.Hybrid> BIG_HYBRID_SOLAR_GENERATOR =
@@ -90,6 +91,7 @@ public class SolarTileEntityTypes {
                     .clientTicker(TileEntityMekanism::tickClient)
                     .serverTicker(TileEntityMekanism::tickServer)
                     .withSimple(Capabilities.CONFIG_CARD)
+                    .withSimple(Capabilities.EVAPORATION_SOLAR)
                     .build();
 
     public static final TileEntityTypeRegistryObject<TileEntityBigSolarGenerators.Ultimate> BIG_ULTIMATE_SOLAR_GENERATOR =
@@ -97,6 +99,7 @@ public class SolarTileEntityTypes {
                     .clientTicker(TileEntityMekanism::tickClient)
                     .serverTicker(TileEntityMekanism::tickServer)
                     .withSimple(Capabilities.CONFIG_CARD)
+                    .withSimple(Capabilities.EVAPORATION_SOLAR)
                     .build();
 
     public static final TileEntityTypeRegistryObject<TileEntityBigSolarGenerators.Quantum> BIG_QUANTUM_SOLAR_GENERATOR =
@@ -104,6 +107,7 @@ public class SolarTileEntityTypes {
                     .clientTicker(TileEntityMekanism::tickClient)
                     .serverTicker(TileEntityMekanism::tickServer)
                     .withSimple(Capabilities.CONFIG_CARD)
+                    .withSimple(Capabilities.EVAPORATION_SOLAR)
                     .build();
 
     public static final TileEntityTypeRegistryObject<TileEntityBigSolarGenerators.Spectral> BIG_SPECTRAL_SOLAR_GENERATOR =
@@ -111,6 +115,7 @@ public class SolarTileEntityTypes {
                     .clientTicker(TileEntityMekanism::tickClient)
                     .serverTicker(TileEntityMekanism::tickServer)
                     .withSimple(Capabilities.CONFIG_CARD)
+                    .withSimple(Capabilities.EVAPORATION_SOLAR)
                     .build();
 
     public static final TileEntityTypeRegistryObject<TileEntityBigSolarGenerators.Singular> BIG_SINGULAR_SOLAR_GENERATOR =
@@ -118,6 +123,7 @@ public class SolarTileEntityTypes {
                     .clientTicker(TileEntityMekanism::tickClient)
                     .serverTicker(TileEntityMekanism::tickServer)
                     .withSimple(Capabilities.CONFIG_CARD)
+                    .withSimple(Capabilities.EVAPORATION_SOLAR)
                     .build();
 
     public static final TileEntityTypeRegistryObject<TileEntityBigSolarGenerators.LightAbsorbing> BIG_LIGHT_ABSORBING_SOLAR_GENERATOR =
@@ -125,6 +131,7 @@ public class SolarTileEntityTypes {
                     .clientTicker(TileEntityMekanism::tickClient)
                     .serverTicker(TileEntityMekanism::tickServer)
                     .withSimple(Capabilities.CONFIG_CARD)
+                    .withSimple(Capabilities.EVAPORATION_SOLAR)
                     .build();
 
     public static final TileEntityTypeRegistryObject<TileEntityBigSolarGenerators.Photonic> BIG_PHOTONIC_SOLAR_GENERATOR =
@@ -132,6 +139,7 @@ public class SolarTileEntityTypes {
                     .clientTicker(TileEntityMekanism::tickClient)
                     .serverTicker(TileEntityMekanism::tickServer)
                     .withSimple(Capabilities.CONFIG_CARD)
+                    .withSimple(Capabilities.EVAPORATION_SOLAR)
                     .build();
 
     public static final TileEntityTypeRegistryObject<TileEntityBigSolarGenerators.Creative> BIG_CREATIVE_SOLAR_GENERATOR =
@@ -139,5 +147,6 @@ public class SolarTileEntityTypes {
                     .clientTicker(TileEntityMekanism::tickClient)
                     .serverTicker(TileEntityMekanism::tickServer)
                     .withSimple(Capabilities.CONFIG_CARD)
+                    .withSimple(Capabilities.EVAPORATION_SOLAR)
                     .build();
 }

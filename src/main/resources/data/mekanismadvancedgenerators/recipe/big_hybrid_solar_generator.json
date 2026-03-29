@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": { "id": "mekanismadvancedgenerators:big_hybrid_solar_generator" },
+  "pattern": [ "AOA", "AOA", "RRR" ],
+  "key": {
+    "A": { "item": "mekanismadvancedgenerators:hybrid_solar_panel" },
+    "O": { "item": "mekanism:advanced_control_circuit" },
+    "R": { "item": "mekanism:ingot_osmium" }
+  }
+}
