@@ -2,6 +2,8 @@ package com.pocky.solarpanels.registries;
 
 import com.pocky.solarpanels.SolarPanelsMod;
 import com.pocky.solarpanels.content.blocktype.Generator;
+import com.pocky.solarpanels.content.cable.AdvancedCableTier;
+import com.pocky.solarpanels.content.cable.BlockAdvancedCable;
 import com.pocky.solarpanels.tile.TileEntityBigSolarGenerators;
 import com.pocky.solarpanels.tile.TileEntitySolarGenerators;
 import mekanism.common.attachments.containers.ContainerType;
@@ -10,6 +12,7 @@ import mekanism.common.block.prefab.BlockTile.BlockTileModel;
 import mekanism.common.item.block.ItemBlockTooltip;
 import mekanism.common.registration.impl.BlockDeferredRegister;
 import mekanism.common.registration.impl.BlockRegistryObject;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.material.MapColor;
 
 public class SolarBlocks {
@@ -108,4 +111,16 @@ public class SolarBlocks {
             ItemBlockTooltip<BlockTileModel<TileEntityBigSolarGenerators.Creative, Generator<TileEntityBigSolarGenerators.Creative>>>> BIG_CREATIVE_SOLAR_GENERATOR =
             BLOCKS.registerDetails("big_creative_solar_generator", () -> new BlockTileModel<>(SolarBlockTypes.BIG_CREATIVE_SOLAR_GENERATOR, props -> props.mapColor(MapColor.COLOR_BLUE)))
                     .forItemHolder(holder -> holder.addAttachmentOnlyContainers(ContainerType.ITEM, () -> ItemSlotsBuilder.builder().addEnergy().build()));
+
+    public static final BlockRegistryObject<BlockAdvancedCable, BlockItem> COSMIC_CABLE =
+            BLOCKS.register("cosmic_universal_cable", () -> new BlockAdvancedCable(SolarBlockTypes.COSMIC_CABLE, AdvancedCableTier.COSMIC));
+
+    public static final BlockRegistryObject<BlockAdvancedCable, BlockItem> SUPREME_CABLE =
+            BLOCKS.register("supreme_universal_cable", () -> new BlockAdvancedCable(SolarBlockTypes.SUPREME_CABLE, AdvancedCableTier.SUPREME));
+
+    public static final BlockRegistryObject<BlockAdvancedCable, BlockItem> INFINITY_CABLE =
+            BLOCKS.register("infinity_universal_cable", () -> new BlockAdvancedCable(SolarBlockTypes.INFINITY_CABLE, AdvancedCableTier.INFINITY));
+
+    public static final BlockRegistryObject<BlockAdvancedCable, BlockItem> GALACTIC_CABLE =
+            BLOCKS.register("galactic_universal_cable", () -> new BlockAdvancedCable(SolarBlockTypes.GALACTIC_CABLE, AdvancedCableTier.GALACTIC));
 }

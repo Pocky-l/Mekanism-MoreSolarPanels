@@ -3,10 +3,15 @@ package com.pocky.solarpanels.registries;
 import com.pocky.solarpanels.config.SolarPanelsConfig;
 import com.pocky.solarpanels.content.blocktype.BlockShapes;
 import com.pocky.solarpanels.content.blocktype.Generator;
+import com.pocky.solarpanels.content.cable.TileEntityAdvancedCable;
 import com.pocky.solarpanels.tile.TileEntityBigSolarGenerators;
 import com.pocky.solarpanels.tile.TileEntitySolarGenerators;
+import mekanism.common.block.attribute.AttributeTier;
 import mekanism.common.block.attribute.AttributeUpgradeSupport;
 import mekanism.common.block.attribute.Attributes;
+import mekanism.common.content.blocktype.BlockTypeTile;
+import mekanism.common.content.blocktype.BlockTypeTile.BlockTileBuilder;
+import mekanism.common.tier.CableTier;
 
 public class SolarBlockTypes {
 
@@ -192,4 +197,15 @@ public class SolarBlockTypes {
             .with(AttributeUpgradeSupport.MUFFLING_ONLY)
             .replace(Attributes.ACTIVE)
             .build();
+
+    public static final BlockTypeTile<TileEntityAdvancedCable> COSMIC_CABLE = createCable(() -> SolarTileEntityTypes.COSMIC_CABLE);
+    public static final BlockTypeTile<TileEntityAdvancedCable> SUPREME_CABLE = createCable(() -> SolarTileEntityTypes.SUPREME_CABLE);
+    public static final BlockTypeTile<TileEntityAdvancedCable> INFINITY_CABLE = createCable(() -> SolarTileEntityTypes.INFINITY_CABLE);
+    public static final BlockTypeTile<TileEntityAdvancedCable> GALACTIC_CABLE = createCable(() -> SolarTileEntityTypes.GALACTIC_CABLE);
+
+    private static BlockTypeTile<TileEntityAdvancedCable> createCable(java.util.function.Supplier<mekanism.common.registration.impl.TileEntityTypeRegistryObject<TileEntityAdvancedCable>> tile) {
+        return BlockTileBuilder.createBlock(tile, SolarLang.DESCRIPTION_SOLAR_GENERATOR)
+                .with(new AttributeTier<>(CableTier.ULTIMATE))
+                .build();
+    }
 }

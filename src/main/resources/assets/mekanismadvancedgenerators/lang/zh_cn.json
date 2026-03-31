@@ -1,6 +1,11 @@
 {
   "constants.mekanismadvancedgenerators.mod_name": "Mekanism: Advanced Generators",
 
+  "block.mekanismadvancedgenerators.cosmic_universal_cable": "Cosmic Universal Cable",
+  "block.mekanismadvancedgenerators.supreme_universal_cable": "Supreme Universal Cable",
+  "block.mekanismadvancedgenerators.infinity_universal_cable": "Infinity Universal Cable",
+  "block.mekanismadvancedgenerators.galactic_universal_cable": "Galactic Universal Cable",
+
   "block.mekanismadvancedgenerators.advanced_solar_panel": "高级太阳能板",
   "block.mekanismadvancedgenerators.hybrid_solar_panel": "混合太阳能板",
   "block.mekanismadvancedgenerators.ultimate_solar_panel": "终极混合太阳能板",

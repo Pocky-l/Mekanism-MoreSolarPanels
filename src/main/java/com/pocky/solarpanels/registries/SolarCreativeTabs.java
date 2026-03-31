@@ -44,7 +44,11 @@ public class SolarCreativeTabs {
                     SolarBlocks.BIG_SINGULAR_SOLAR_GENERATOR,
                     SolarBlocks.BIG_LIGHT_ABSORBING_SOLAR_GENERATOR,
                     SolarBlocks.BIG_PHOTONIC_SOLAR_GENERATOR,
-                    SolarBlocks.BIG_CREATIVE_SOLAR_GENERATOR
+                    SolarBlocks.BIG_CREATIVE_SOLAR_GENERATOR,
+                    SolarBlocks.COSMIC_CABLE,
+                    SolarBlocks.SUPREME_CABLE,
+                    SolarBlocks.INFINITY_CABLE,
+                    SolarBlocks.GALACTIC_CABLE
             );
         } else if (tabKey == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             CreativeTabDeferredRegister.addToDisplay(event,

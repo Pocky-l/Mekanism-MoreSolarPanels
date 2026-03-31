@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "mekanismadvancedgenerators:cosmic_universal_cable",
+    "mekanismadvancedgenerators:supreme_universal_cable",
+    "mekanismadvancedgenerators:infinity_universal_cable",
+    "mekanismadvancedgenerators:galactic_universal_cable",
     "mekanismadvancedgenerators:advanced_solar_panel",
     "mekanismadvancedgenerators:hybrid_solar_panel",
     "mekanismadvancedgenerators:ultimate_solar_panel",
