@@ -1,7 +1,8 @@
 {
   "variants": {
-    "": {
-      "model": "mekanismadvancedgenerators:block/big_spectral_solar_generator"
-    }
+    "facing=north": { "model": "mekanismadvancedgenerators:block/big_spectral_solar_generator" },
+    "facing=south": { "model": "mekanismadvancedgenerators:block/big_spectral_solar_generator", "y": 180 },
+    "facing=west":  { "model": "mekanismadvancedgenerators:block/big_spectral_solar_generator", "y": 270 },
+    "facing=east":  { "model": "mekanismadvancedgenerators:block/big_spectral_solar_generator", "y": 90 }
   }
 }
