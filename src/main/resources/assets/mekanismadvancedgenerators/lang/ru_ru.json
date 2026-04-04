@@ -6,6 +6,11 @@
   "block.mekanismadvancedgenerators.infinity_universal_cable": "Infinity Universal Cable",
   "block.mekanismadvancedgenerators.galactic_universal_cable": "Galactic Universal Cable",
 
+  "block.mekanismadvancedgenerators.cosmic_energy_cube": "Космический энергокуб",
+  "block.mekanismadvancedgenerators.supreme_energy_cube": "Верховный энергокуб",
+  "block.mekanismadvancedgenerators.infinity_energy_cube": "Бесконечный энергокуб",
+  "block.mekanismadvancedgenerators.galactic_energy_cube": "Галактический энергокуб",
+
   "block.mekanismadvancedgenerators.advanced_solar_panel": "Advanced Solar Panel",
   "block.mekanismadvancedgenerators.hybrid_solar_panel": "Hybrid Solar Panel",
   "block.mekanismadvancedgenerators.ultimate_solar_panel": "Ultimate Hybrid Solar Panel",

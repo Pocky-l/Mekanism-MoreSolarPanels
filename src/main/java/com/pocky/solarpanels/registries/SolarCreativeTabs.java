@@ -48,7 +48,11 @@ public class SolarCreativeTabs {
                     SolarBlocks.COSMIC_CABLE,
                     SolarBlocks.SUPREME_CABLE,
                     SolarBlocks.INFINITY_CABLE,
-                    SolarBlocks.GALACTIC_CABLE
+                    SolarBlocks.GALACTIC_CABLE,
+                    SolarBlocks.COSMIC_ENERGY_CUBE,
+                    SolarBlocks.SUPREME_ENERGY_CUBE,
+                    SolarBlocks.INFINITY_ENERGY_CUBE,
+                    SolarBlocks.GALACTIC_ENERGY_CUBE
             );
         } else if (tabKey == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             CreativeTabDeferredRegister.addToDisplay(event,

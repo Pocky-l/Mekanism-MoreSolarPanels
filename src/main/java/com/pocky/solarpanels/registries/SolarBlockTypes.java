@@ -4,14 +4,28 @@ import com.pocky.solarpanels.config.SolarPanelsConfig;
 import com.pocky.solarpanels.content.blocktype.BlockShapes;
 import com.pocky.solarpanels.content.blocktype.Generator;
 import com.pocky.solarpanels.content.cable.TileEntityAdvancedCable;
+import com.pocky.solarpanels.content.energycube.AdvancedEnergyCubeTier;
 import com.pocky.solarpanels.tile.TileEntityBigSolarGenerators;
 import com.pocky.solarpanels.tile.TileEntitySolarGenerators;
+import java.util.function.Supplier;
+import mekanism.common.MekanismLang;
+import mekanism.common.block.attribute.AttributeParticleFX;
+import mekanism.common.block.attribute.AttributeStateActive;
+import mekanism.common.block.attribute.AttributeStateFacing;
 import mekanism.common.block.attribute.AttributeTier;
 import mekanism.common.block.attribute.AttributeUpgradeSupport;
 import mekanism.common.block.attribute.Attributes;
 import mekanism.common.content.blocktype.BlockTypeTile;
 import mekanism.common.content.blocktype.BlockTypeTile.BlockTileBuilder;
+import mekanism.common.content.blocktype.Machine;
+import mekanism.common.content.blocktype.Machine.MachineBuilder;
+import mekanism.common.lib.transmitter.TransmissionType;
+import mekanism.common.registration.impl.TileEntityTypeRegistryObject;
+import mekanism.common.registries.MekanismContainerTypes;
 import mekanism.common.tier.CableTier;
+import mekanism.common.tier.EnergyCubeTier;
+import mekanism.common.tile.TileEntityEnergyCube;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
 public class SolarBlockTypes {
 
@@ -206,6 +220,22 @@ public class SolarBlockTypes {
     private static BlockTypeTile<TileEntityAdvancedCable> createCable(java.util.function.Supplier<mekanism.common.registration.impl.TileEntityTypeRegistryObject<TileEntityAdvancedCable>> tile) {
         return BlockTileBuilder.createBlock(tile, SolarLang.DESCRIPTION_SOLAR_GENERATOR)
                 .with(new AttributeTier<>(CableTier.ULTIMATE))
+                .build();
+    }
+
+    public static final Machine<TileEntityEnergyCube> COSMIC_ENERGY_CUBE = createAdvancedEnergyCube(AdvancedEnergyCubeTier.COSMIC, () -> SolarTileEntityTypes.COSMIC_ENERGY_CUBE);
+    public static final Machine<TileEntityEnergyCube> SUPREME_ENERGY_CUBE = createAdvancedEnergyCube(AdvancedEnergyCubeTier.SUPREME, () -> SolarTileEntityTypes.SUPREME_ENERGY_CUBE);
+    public static final Machine<TileEntityEnergyCube> INFINITY_ENERGY_CUBE = createAdvancedEnergyCube(AdvancedEnergyCubeTier.INFINITY, () -> SolarTileEntityTypes.INFINITY_ENERGY_CUBE);
+    public static final Machine<TileEntityEnergyCube> GALACTIC_ENERGY_CUBE = createAdvancedEnergyCube(AdvancedEnergyCubeTier.GALACTIC, () -> SolarTileEntityTypes.GALACTIC_ENERGY_CUBE);
+
+    private static Machine<TileEntityEnergyCube> createAdvancedEnergyCube(AdvancedEnergyCubeTier tier,
+            Supplier<TileEntityTypeRegistryObject<TileEntityEnergyCube>> tile) {
+        return MachineBuilder.<TileEntityEnergyCube>createMachine(tile, MekanismLang.DESCRIPTION_ENERGY_CUBE)
+                .withGui(() -> MekanismContainerTypes.ENERGY_CUBE)
+                .withEnergyConfig(tier::getMaxEnergy)
+                .with(new AttributeTier<>(EnergyCubeTier.ULTIMATE), new AttributeStateFacing(BlockStateProperties.FACING))
+                .withSideConfig(TransmissionType.ENERGY, TransmissionType.ITEM)
+                .without(AttributeParticleFX.class, AttributeStateActive.class, AttributeUpgradeSupport.class)
                 .build();
     }
 }

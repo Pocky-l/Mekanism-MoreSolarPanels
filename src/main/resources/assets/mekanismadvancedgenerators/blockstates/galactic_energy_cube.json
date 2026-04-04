@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=down": { "model": "mekanism:block/energy_cube/ultimate" },
+    "facing=east": { "model": "mekanism:block/energy_cube/ultimate" },
+    "facing=north": { "model": "mekanism:block/energy_cube/ultimate" },
+    "facing=south": { "model": "mekanism:block/energy_cube/ultimate" },
+    "facing=up": { "model": "mekanism:block/energy_cube/ultimate" },
+    "facing=west": { "model": "mekanism:block/energy_cube/ultimate" }
+  }
+}

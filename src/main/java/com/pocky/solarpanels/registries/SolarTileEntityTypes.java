@@ -5,12 +5,15 @@ import com.pocky.solarpanels.content.cable.TileEntityAdvancedCable;
 import com.pocky.solarpanels.content.cable.TileEntityAdvancedCables;
 import com.pocky.solarpanels.tile.TileEntityBigSolarGenerators;
 import com.pocky.solarpanels.tile.TileEntitySolarGenerators;
+import mekanism.common.block.BlockEnergyCube;
 import mekanism.common.capabilities.Capabilities;
 import mekanism.common.integration.energy.EnergyCompatUtils;
 import mekanism.common.registration.impl.TileEntityTypeDeferredRegister;
 import mekanism.common.registration.impl.TileEntityTypeRegistryObject;
+import mekanism.common.tile.TileEntityEnergyCube;
 import mekanism.common.tile.base.TileEntityMekanism;
 import mekanism.common.tile.transmitter.TileEntityTransmitter;
+import net.neoforged.neoforge.registries.DeferredHolder;
 
 public class SolarTileEntityTypes {
 
@@ -168,5 +171,18 @@ public class SolarTileEntityTypes {
                 .with(Capabilities.CONFIGURABLE, TileEntityTransmitter.CONFIGURABLE_PROVIDER);
         EnergyCompatUtils.addBlockCapabilities(builder);
         return builder.build();
+    }
+
+    public static final TileEntityTypeRegistryObject<TileEntityEnergyCube> COSMIC_ENERGY_CUBE = registerAdvancedEnergyCube(SolarBlocks.COSMIC_ENERGY_CUBE);
+    public static final TileEntityTypeRegistryObject<TileEntityEnergyCube> SUPREME_ENERGY_CUBE = registerAdvancedEnergyCube(SolarBlocks.SUPREME_ENERGY_CUBE);
+    public static final TileEntityTypeRegistryObject<TileEntityEnergyCube> INFINITY_ENERGY_CUBE = registerAdvancedEnergyCube(SolarBlocks.INFINITY_ENERGY_CUBE);
+    public static final TileEntityTypeRegistryObject<TileEntityEnergyCube> GALACTIC_ENERGY_CUBE = registerAdvancedEnergyCube(SolarBlocks.GALACTIC_ENERGY_CUBE);
+
+    private static TileEntityTypeRegistryObject<TileEntityEnergyCube> registerAdvancedEnergyCube(
+            DeferredHolder<net.minecraft.world.level.block.Block, BlockEnergyCube> block) {
+        return TILE_ENTITY_TYPES.mekBuilder(block, (pos, state) -> new TileEntityEnergyCube(block, pos, state))
+                .serverTicker(TileEntityMekanism::tickServer)
+                .withSimple(Capabilities.CONFIG_CARD)
+                .build();
     }
 }

@@ -6,6 +6,7 @@ import com.pocky.solarpanels.content.cable.AdvancedCableTier;
 import com.pocky.solarpanels.content.cable.BlockAdvancedCable;
 import com.pocky.solarpanels.tile.TileEntityBigSolarGenerators;
 import com.pocky.solarpanels.tile.TileEntitySolarGenerators;
+import mekanism.common.block.BlockEnergyCube;
 import mekanism.common.attachments.containers.ContainerType;
 import mekanism.common.attachments.containers.item.ItemSlotsBuilder;
 import mekanism.common.block.prefab.BlockTile.BlockTileModel;
@@ -123,4 +124,20 @@ public class SolarBlocks {
 
     public static final BlockRegistryObject<BlockAdvancedCable, BlockItem> GALACTIC_CABLE =
             BLOCKS.register("galactic_universal_cable", () -> new BlockAdvancedCable(SolarBlockTypes.GALACTIC_CABLE, AdvancedCableTier.GALACTIC));
+
+    public static final BlockRegistryObject<BlockEnergyCube, ItemBlockTooltip<BlockEnergyCube>> COSMIC_ENERGY_CUBE =
+            BLOCKS.registerDetails("cosmic_energy_cube", () -> new BlockEnergyCube(SolarBlockTypes.COSMIC_ENERGY_CUBE))
+                    .forItemHolder(holder -> holder.addAttachmentOnlyContainers(ContainerType.ITEM, () -> ItemSlotsBuilder.builder().addEnergy().build()));
+
+    public static final BlockRegistryObject<BlockEnergyCube, ItemBlockTooltip<BlockEnergyCube>> SUPREME_ENERGY_CUBE =
+            BLOCKS.registerDetails("supreme_energy_cube", () -> new BlockEnergyCube(SolarBlockTypes.SUPREME_ENERGY_CUBE))
+                    .forItemHolder(holder -> holder.addAttachmentOnlyContainers(ContainerType.ITEM, () -> ItemSlotsBuilder.builder().addEnergy().build()));
+
+    public static final BlockRegistryObject<BlockEnergyCube, ItemBlockTooltip<BlockEnergyCube>> INFINITY_ENERGY_CUBE =
+            BLOCKS.registerDetails("infinity_energy_cube", () -> new BlockEnergyCube(SolarBlockTypes.INFINITY_ENERGY_CUBE))
+                    .forItemHolder(holder -> holder.addAttachmentOnlyContainers(ContainerType.ITEM, () -> ItemSlotsBuilder.builder().addEnergy().build()));
+
+    public static final BlockRegistryObject<BlockEnergyCube, ItemBlockTooltip<BlockEnergyCube>> GALACTIC_ENERGY_CUBE =
+            BLOCKS.registerDetails("galactic_energy_cube", () -> new BlockEnergyCube(SolarBlockTypes.GALACTIC_ENERGY_CUBE))
+                    .forItemHolder(holder -> holder.addAttachmentOnlyContainers(ContainerType.ITEM, () -> ItemSlotsBuilder.builder().addEnergy().build()));
 }

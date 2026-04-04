@@ -6,6 +6,11 @@
   "block.mekanismadvancedgenerators.infinity_universal_cable": "Infinity Universal Cable",
   "block.mekanismadvancedgenerators.galactic_universal_cable": "Galactic Universal Cable",
 
+  "block.mekanismadvancedgenerators.cosmic_energy_cube": "宇宙能量方块",
+  "block.mekanismadvancedgenerators.supreme_energy_cube": "至高能量方块",
+  "block.mekanismadvancedgenerators.infinity_energy_cube": "无限能量方块",
+  "block.mekanismadvancedgenerators.galactic_energy_cube": "银河能量方块",
+
   "block.mekanismadvancedgenerators.advanced_solar_panel": "高级太阳能板",
   "block.mekanismadvancedgenerators.hybrid_solar_panel": "混合太阳能板",
   "block.mekanismadvancedgenerators.ultimate_solar_panel": "终极混合太阳能板",
