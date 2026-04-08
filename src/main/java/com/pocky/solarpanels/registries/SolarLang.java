@@ -9,6 +9,7 @@ import net.minecraft.Util;
 public enum SolarLang implements ILangEntry {
     MEKANISM_ADVANCED_GENERATORS("constants", "mod_name"),
     DESCRIPTION_SOLAR_GENERATOR("description", "solar_generator"),
+    DESCRIPTION_ADVANCED_CABLE("description", "advanced_cable"),
     PRODUCING_AMOUNT("gui", "producing.amount"),
     OUTPUT_RATE_SHORT("gui", "output_rate.short"),
     ;

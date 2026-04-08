@@ -4,6 +4,7 @@ import com.pocky.solarpanels.SolarPanelsMod;
 import com.pocky.solarpanels.content.blocktype.Generator;
 import com.pocky.solarpanels.content.cable.AdvancedCableTier;
 import com.pocky.solarpanels.content.cable.BlockAdvancedCable;
+import com.pocky.solarpanels.content.cable.ItemBlockAdvancedCable;
 import com.pocky.solarpanels.tile.TileEntityBigSolarGenerators;
 import com.pocky.solarpanels.tile.TileEntitySolarGenerators;
 import mekanism.common.block.BlockEnergyCube;
@@ -13,7 +14,6 @@ import mekanism.common.block.prefab.BlockTile.BlockTileModel;
 import mekanism.common.item.block.ItemBlockTooltip;
 import mekanism.common.registration.impl.BlockDeferredRegister;
 import mekanism.common.registration.impl.BlockRegistryObject;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.material.MapColor;
 
 public class SolarBlocks {
@@ -113,17 +113,17 @@ public class SolarBlocks {
             BLOCKS.registerDetails("big_creative_solar_generator", () -> new BlockTileModel<>(SolarBlockTypes.BIG_CREATIVE_SOLAR_GENERATOR, props -> props.mapColor(MapColor.COLOR_BLUE)))
                     .forItemHolder(holder -> holder.addAttachmentOnlyContainers(ContainerType.ITEM, () -> ItemSlotsBuilder.builder().addEnergy().build()));
 
-    public static final BlockRegistryObject<BlockAdvancedCable, BlockItem> COSMIC_CABLE =
-            BLOCKS.register("cosmic_universal_cable", () -> new BlockAdvancedCable(SolarBlockTypes.COSMIC_CABLE, AdvancedCableTier.COSMIC));
+    public static final BlockRegistryObject<BlockAdvancedCable, ItemBlockAdvancedCable> COSMIC_CABLE =
+            BLOCKS.register("cosmic_universal_cable", () -> new BlockAdvancedCable(SolarBlockTypes.COSMIC_CABLE, AdvancedCableTier.COSMIC), (block, props) -> new ItemBlockAdvancedCable(block, props));
 
-    public static final BlockRegistryObject<BlockAdvancedCable, BlockItem> SUPREME_CABLE =
-            BLOCKS.register("supreme_universal_cable", () -> new BlockAdvancedCable(SolarBlockTypes.SUPREME_CABLE, AdvancedCableTier.SUPREME));
+    public static final BlockRegistryObject<BlockAdvancedCable, ItemBlockAdvancedCable> SUPREME_CABLE =
+            BLOCKS.register("supreme_universal_cable", () -> new BlockAdvancedCable(SolarBlockTypes.SUPREME_CABLE, AdvancedCableTier.SUPREME), (block, props) -> new ItemBlockAdvancedCable(block, props));
 
-    public static final BlockRegistryObject<BlockAdvancedCable, BlockItem> INFINITY_CABLE =
-            BLOCKS.register("infinity_universal_cable", () -> new BlockAdvancedCable(SolarBlockTypes.INFINITY_CABLE, AdvancedCableTier.INFINITY));
+    public static final BlockRegistryObject<BlockAdvancedCable, ItemBlockAdvancedCable> INFINITY_CABLE =
+            BLOCKS.register("infinity_universal_cable", () -> new BlockAdvancedCable(SolarBlockTypes.INFINITY_CABLE, AdvancedCableTier.INFINITY), (block, props) -> new ItemBlockAdvancedCable(block, props));
 
-    public static final BlockRegistryObject<BlockAdvancedCable, BlockItem> GALACTIC_CABLE =
-            BLOCKS.register("galactic_universal_cable", () -> new BlockAdvancedCable(SolarBlockTypes.GALACTIC_CABLE, AdvancedCableTier.GALACTIC));
+    public static final BlockRegistryObject<BlockAdvancedCable, ItemBlockAdvancedCable> GALACTIC_CABLE =
+            BLOCKS.register("galactic_universal_cable", () -> new BlockAdvancedCable(SolarBlockTypes.GALACTIC_CABLE, AdvancedCableTier.GALACTIC), (block, props) -> new ItemBlockAdvancedCable(block, props));
 
     public static final BlockRegistryObject<BlockEnergyCube, ItemBlockTooltip<BlockEnergyCube>> COSMIC_ENERGY_CUBE =
             BLOCKS.registerDetails("cosmic_energy_cube", () -> new BlockEnergyCube(SolarBlockTypes.COSMIC_ENERGY_CUBE))
