@@ -9,12 +9,17 @@ import com.pocky.solarpanels.tile.TileEntityBigSolarGenerators;
 import com.pocky.solarpanels.tile.TileEntitySolarGenerators;
 import java.util.function.Supplier;
 import mekanism.common.MekanismLang;
+import mekanism.common.block.attribute.AttributeHasBounding.HandleBoundingBlock;
+import mekanism.common.block.attribute.AttributeHasBounding.TriBooleanFunction;
 import mekanism.common.block.attribute.AttributeParticleFX;
 import mekanism.common.block.attribute.AttributeStateActive;
 import mekanism.common.block.attribute.AttributeStateFacing;
 import mekanism.common.block.attribute.AttributeTier;
 import mekanism.common.block.attribute.AttributeUpgradeSupport;
 import mekanism.common.block.attribute.Attributes;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.state.BlockState;
 import mekanism.common.content.blocktype.BlockTypeTile;
 import mekanism.common.content.blocktype.BlockTypeTile.BlockTileBuilder;
 import mekanism.common.content.blocktype.Machine;
@@ -122,11 +127,31 @@ public class SolarBlockTypes {
             .replace(Attributes.ACTIVE)
             .build();
 
+    private static final HandleBoundingBlock BIG_SOLAR_BOUNDING = new HandleBoundingBlock() {
+        @Override
+        public <DATA> boolean handle(Level level, BlockPos pos, BlockState state, DATA data, TriBooleanFunction<Level, BlockPos, DATA> consumer) {
+            BlockPos.MutableBlockPos mutable = new BlockPos.MutableBlockPos();
+            if (!consumer.accept(level, mutable.setWithOffset(pos, 0, 1, 0), data)) {
+                return false;
+            }
+            for (int x = -1; x <= 1; x++) {
+                for (int z = -1; z <= 1; z++) {
+                    mutable.setWithOffset(pos, x, 2, z);
+                    if (!consumer.accept(level, mutable, data)) {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+    };
+
     public static final Generator<TileEntityBigSolarGenerators.Advanced> BIG_ADVANCED_SOLAR_GENERATOR = Generator.GeneratorBuilder
             .createGenerator(() -> SolarTileEntityTypes.BIG_ADVANCED_SOLAR_GENERATOR, SolarLang.DESCRIPTION_SOLAR_GENERATOR)
             .withGui(() -> SolarContainerTypes.BIG_ADVANCED_SOLAR_GENERATOR)
             .withEnergyConfig(SolarPanelsConfig.storageConfig.bigAdvancedSolarGenerator)
-            .withCustomShape(BlockShapes.ADVANCED_SOLAR_PANEL)
+            .withCustomShape(BlockShapes.BIG_ADVANCED_SOLAR_GENERATOR)
+            .withBounding(BIG_SOLAR_BOUNDING)
             .withSound(SolarSounds.SOLAR_GENERATOR)
             .with(AttributeUpgradeSupport.MUFFLING_ONLY)
             .replace(Attributes.ACTIVE)
@@ -136,7 +161,8 @@ public class SolarBlockTypes {
             .createGenerator(() -> SolarTileEntityTypes.BIG_HYBRID_SOLAR_GENERATOR, SolarLang.DESCRIPTION_SOLAR_GENERATOR)
             .withGui(() -> SolarContainerTypes.BIG_HYBRID_SOLAR_GENERATOR)
             .withEnergyConfig(SolarPanelsConfig.storageConfig.bigHybridSolarGenerator)
-            .withCustomShape(BlockShapes.HYBRID_SOLAR_PANEL)
+            .withCustomShape(BlockShapes.BIG_ADVANCED_SOLAR_GENERATOR)
+            .withBounding(BIG_SOLAR_BOUNDING)
             .withSound(SolarSounds.SOLAR_GENERATOR)
             .with(AttributeUpgradeSupport.MUFFLING_ONLY)
             .replace(Attributes.ACTIVE)
@@ -146,7 +172,8 @@ public class SolarBlockTypes {
             .createGenerator(() -> SolarTileEntityTypes.BIG_ULTIMATE_SOLAR_GENERATOR, SolarLang.DESCRIPTION_SOLAR_GENERATOR)
             .withGui(() -> SolarContainerTypes.BIG_ULTIMATE_SOLAR_GENERATOR)
             .withEnergyConfig(SolarPanelsConfig.storageConfig.bigUltimateSolarGenerator)
-            .withCustomShape(BlockShapes.ULTIMATE_SOLAR_PANEL)
+            .withCustomShape(BlockShapes.BIG_ADVANCED_SOLAR_GENERATOR)
+            .withBounding(BIG_SOLAR_BOUNDING)
             .withSound(SolarSounds.SOLAR_GENERATOR)
             .with(AttributeUpgradeSupport.MUFFLING_ONLY)
             .replace(Attributes.ACTIVE)
@@ -156,7 +183,8 @@ public class SolarBlockTypes {
             .createGenerator(() -> SolarTileEntityTypes.BIG_QUANTUM_SOLAR_GENERATOR, SolarLang.DESCRIPTION_SOLAR_GENERATOR)
             .withGui(() -> SolarContainerTypes.BIG_QUANTUM_SOLAR_GENERATOR)
             .withEnergyConfig(SolarPanelsConfig.storageConfig.bigQuantumSolarGenerator)
-            .withCustomShape(BlockShapes.QUANTUM_SOLAR_PANEL)
+            .withCustomShape(BlockShapes.BIG_ADVANCED_SOLAR_GENERATOR)
+            .withBounding(BIG_SOLAR_BOUNDING)
             .withSound(SolarSounds.SOLAR_GENERATOR)
             .with(AttributeUpgradeSupport.MUFFLING_ONLY)
             .replace(Attributes.ACTIVE)
@@ -166,7 +194,8 @@ public class SolarBlockTypes {
             .createGenerator(() -> SolarTileEntityTypes.BIG_SPECTRAL_SOLAR_GENERATOR, SolarLang.DESCRIPTION_SOLAR_GENERATOR)
             .withGui(() -> SolarContainerTypes.BIG_SPECTRAL_SOLAR_GENERATOR)
             .withEnergyConfig(SolarPanelsConfig.storageConfig.bigSpectralSolarGenerator)
-            .withCustomShape(BlockShapes.SPECTRAL_SOLAR_PANEL)
+            .withCustomShape(BlockShapes.BIG_ADVANCED_SOLAR_GENERATOR)
+            .withBounding(BIG_SOLAR_BOUNDING)
             .withSound(SolarSounds.SOLAR_GENERATOR)
             .with(AttributeUpgradeSupport.MUFFLING_ONLY)
             .replace(Attributes.ACTIVE)
@@ -176,7 +205,8 @@ public class SolarBlockTypes {
             .createGenerator(() -> SolarTileEntityTypes.BIG_SINGULAR_SOLAR_GENERATOR, SolarLang.DESCRIPTION_SOLAR_GENERATOR)
             .withGui(() -> SolarContainerTypes.BIG_SINGULAR_SOLAR_GENERATOR)
             .withEnergyConfig(SolarPanelsConfig.storageConfig.bigSingularSolarGenerator)
-            .withCustomShape(BlockShapes.SINGULAR_SOLAR_PANEL)
+            .withCustomShape(BlockShapes.BIG_ADVANCED_SOLAR_GENERATOR)
+            .withBounding(BIG_SOLAR_BOUNDING)
             .withSound(SolarSounds.SOLAR_GENERATOR)
             .with(AttributeUpgradeSupport.MUFFLING_ONLY)
             .replace(Attributes.ACTIVE)
@@ -186,7 +216,8 @@ public class SolarBlockTypes {
             .createGenerator(() -> SolarTileEntityTypes.BIG_LIGHT_ABSORBING_SOLAR_GENERATOR, SolarLang.DESCRIPTION_SOLAR_GENERATOR)
             .withGui(() -> SolarContainerTypes.BIG_LIGHT_ABSORBING_SOLAR_GENERATOR)
             .withEnergyConfig(SolarPanelsConfig.storageConfig.bigLightAbsorbingSolarGenerator)
-            .withCustomShape(BlockShapes.LIGHT_ABSORBING_SOLAR_PANEL)
+            .withCustomShape(BlockShapes.BIG_ADVANCED_SOLAR_GENERATOR)
+            .withBounding(BIG_SOLAR_BOUNDING)
             .withSound(SolarSounds.SOLAR_GENERATOR)
             .with(AttributeUpgradeSupport.MUFFLING_ONLY)
             .replace(Attributes.ACTIVE)
@@ -196,7 +227,8 @@ public class SolarBlockTypes {
             .createGenerator(() -> SolarTileEntityTypes.BIG_PHOTONIC_SOLAR_GENERATOR, SolarLang.DESCRIPTION_SOLAR_GENERATOR)
             .withGui(() -> SolarContainerTypes.BIG_PHOTONIC_SOLAR_GENERATOR)
             .withEnergyConfig(SolarPanelsConfig.storageConfig.bigPhotonicSolarGenerator)
-            .withCustomShape(BlockShapes.PHOTONIC_SOLAR_PANEL)
+            .withCustomShape(BlockShapes.BIG_ADVANCED_SOLAR_GENERATOR)
+            .withBounding(BIG_SOLAR_BOUNDING)
             .withSound(SolarSounds.SOLAR_GENERATOR)
             .with(AttributeUpgradeSupport.MUFFLING_ONLY)
             .replace(Attributes.ACTIVE)
@@ -206,7 +238,8 @@ public class SolarBlockTypes {
             .createGenerator(() -> SolarTileEntityTypes.BIG_CREATIVE_SOLAR_GENERATOR, SolarLang.DESCRIPTION_SOLAR_GENERATOR)
             .withGui(() -> SolarContainerTypes.BIG_CREATIVE_SOLAR_GENERATOR)
             .withEnergyConfig(SolarPanelsConfig.storageConfig.bigCreativeSolarGenerator)
-            .withCustomShape(BlockShapes.CREATIVE_SOLAR_PANEL)
+            .withCustomShape(BlockShapes.BIG_ADVANCED_SOLAR_GENERATOR)
+            .withBounding(BIG_SOLAR_BOUNDING)
             .withSound(SolarSounds.SOLAR_GENERATOR)
             .with(AttributeUpgradeSupport.MUFFLING_ONLY)
             .replace(Attributes.ACTIVE)
