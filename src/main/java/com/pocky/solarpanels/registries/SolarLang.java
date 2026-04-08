@@ -9,6 +9,10 @@ import net.minecraft.Util;
 public enum SolarLang implements ILangEntry {
     MEKANISM_ADVANCED_GENERATORS("constants", "mod_name"),
     DESCRIPTION_SOLAR_GENERATOR("description", "solar_generator"),
+    DESCRIPTION_COSMIC_ENERGY_CUBE("description", "cosmic_energy_cube"),
+    DESCRIPTION_SUPREME_ENERGY_CUBE("description", "supreme_energy_cube"),
+    DESCRIPTION_INFINITY_ENERGY_CUBE("description", "infinity_energy_cube"),
+    DESCRIPTION_GALACTIC_ENERGY_CUBE("description", "galactic_energy_cube"),
     DESCRIPTION_COSMIC_CABLE("description", "cosmic_cable"),
     DESCRIPTION_SUPREME_CABLE("description", "supreme_cable"),
     DESCRIPTION_INFINITY_CABLE("description", "infinity_cable"),

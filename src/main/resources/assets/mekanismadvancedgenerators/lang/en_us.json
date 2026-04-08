@@ -52,6 +52,10 @@
   "container.mekanismadvancedgenerators.big_creative_solar_generator": "Big Creative Solar Generator",
 
   "description.mekanismadvancedgenerators.solar_generator": "A solar panel that generates energy from sunlight.",
+  "description.mekanismadvancedgenerators.cosmic_energy_cube": "A Cosmic Energy Cube capable of storing 2,048 GJ of energy.",
+  "description.mekanismadvancedgenerators.supreme_energy_cube": "A Supreme Energy Cube capable of storing 16,384 GJ of energy.",
+  "description.mekanismadvancedgenerators.infinity_energy_cube": "An Infinity Energy Cube capable of storing 131,072 GJ of energy.",
+  "description.mekanismadvancedgenerators.galactic_energy_cube": "A Galactic Energy Cube capable of storing 1,048,576 GJ of energy.",
   "description.mekanismadvancedgenerators.cosmic_cable": "A Cosmic Universal Cable capable of transferring vast amounts of energy across dimensions.",
   "description.mekanismadvancedgenerators.supreme_cable": "A Supreme Universal Cable engineered for extreme energy throughput.",
   "description.mekanismadvancedgenerators.infinity_cable": "An Infinity Universal Cable with virtually limitless energy transfer capacity.",

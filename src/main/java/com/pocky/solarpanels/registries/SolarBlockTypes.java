@@ -8,6 +8,7 @@ import com.pocky.solarpanels.content.energycube.AdvancedEnergyCubeTier;
 import com.pocky.solarpanels.tile.TileEntityBigSolarGenerators;
 import com.pocky.solarpanels.tile.TileEntitySolarGenerators;
 import java.util.function.Supplier;
+import mekanism.api.text.ILangEntry;
 import mekanism.common.MekanismLang;
 import mekanism.common.block.attribute.AttributeHasBounding.HandleBoundingBlock;
 import mekanism.common.block.attribute.AttributeHasBounding.TriBooleanFunction;
@@ -256,14 +257,14 @@ public class SolarBlockTypes {
                 .build();
     }
 
-    public static final Machine<TileEntityEnergyCube> COSMIC_ENERGY_CUBE = createAdvancedEnergyCube(AdvancedEnergyCubeTier.COSMIC, () -> SolarTileEntityTypes.COSMIC_ENERGY_CUBE);
-    public static final Machine<TileEntityEnergyCube> SUPREME_ENERGY_CUBE = createAdvancedEnergyCube(AdvancedEnergyCubeTier.SUPREME, () -> SolarTileEntityTypes.SUPREME_ENERGY_CUBE);
-    public static final Machine<TileEntityEnergyCube> INFINITY_ENERGY_CUBE = createAdvancedEnergyCube(AdvancedEnergyCubeTier.INFINITY, () -> SolarTileEntityTypes.INFINITY_ENERGY_CUBE);
-    public static final Machine<TileEntityEnergyCube> GALACTIC_ENERGY_CUBE = createAdvancedEnergyCube(AdvancedEnergyCubeTier.GALACTIC, () -> SolarTileEntityTypes.GALACTIC_ENERGY_CUBE);
+    public static final Machine<TileEntityEnergyCube> COSMIC_ENERGY_CUBE = createAdvancedEnergyCube(AdvancedEnergyCubeTier.COSMIC, SolarLang.DESCRIPTION_COSMIC_ENERGY_CUBE, () -> SolarTileEntityTypes.COSMIC_ENERGY_CUBE);
+    public static final Machine<TileEntityEnergyCube> SUPREME_ENERGY_CUBE = createAdvancedEnergyCube(AdvancedEnergyCubeTier.SUPREME, SolarLang.DESCRIPTION_SUPREME_ENERGY_CUBE, () -> SolarTileEntityTypes.SUPREME_ENERGY_CUBE);
+    public static final Machine<TileEntityEnergyCube> INFINITY_ENERGY_CUBE = createAdvancedEnergyCube(AdvancedEnergyCubeTier.INFINITY, SolarLang.DESCRIPTION_INFINITY_ENERGY_CUBE, () -> SolarTileEntityTypes.INFINITY_ENERGY_CUBE);
+    public static final Machine<TileEntityEnergyCube> GALACTIC_ENERGY_CUBE = createAdvancedEnergyCube(AdvancedEnergyCubeTier.GALACTIC, SolarLang.DESCRIPTION_GALACTIC_ENERGY_CUBE, () -> SolarTileEntityTypes.GALACTIC_ENERGY_CUBE);
 
-    private static Machine<TileEntityEnergyCube> createAdvancedEnergyCube(AdvancedEnergyCubeTier tier,
+    private static Machine<TileEntityEnergyCube> createAdvancedEnergyCube(AdvancedEnergyCubeTier tier, ILangEntry description,
             Supplier<TileEntityTypeRegistryObject<TileEntityEnergyCube>> tile) {
-        return MachineBuilder.<TileEntityEnergyCube>createMachine(tile, MekanismLang.DESCRIPTION_ENERGY_CUBE)
+        return MachineBuilder.<TileEntityEnergyCube>createMachine(tile, description)
                 .withGui(() -> MekanismContainerTypes.ENERGY_CUBE)
                 .withEnergyConfig(tier::getMaxEnergy)
                 .with(new AttributeTier<>(EnergyCubeTier.ULTIMATE), new AttributeStateFacing(BlockStateProperties.FACING))
