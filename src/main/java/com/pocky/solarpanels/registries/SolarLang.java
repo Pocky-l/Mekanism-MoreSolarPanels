@@ -13,6 +13,7 @@ public enum SolarLang implements ILangEntry {
     DESCRIPTION_SUPREME_CABLE("description", "supreme_cable"),
     DESCRIPTION_INFINITY_CABLE("description", "infinity_cable"),
     DESCRIPTION_GALACTIC_CABLE("description", "galactic_cable"),
+    CABLE_TRANSFER_RATE("tooltip", "cable.transfer_rate"),
     PRODUCING_AMOUNT("gui", "producing.amount"),
     OUTPUT_RATE_SHORT("gui", "output_rate.short"),
     ;
