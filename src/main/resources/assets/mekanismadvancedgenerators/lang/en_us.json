@@ -52,7 +52,10 @@
   "container.mekanismadvancedgenerators.big_creative_solar_generator": "Big Creative Solar Generator",
 
   "description.mekanismadvancedgenerators.solar_generator": "A solar panel that generates energy from sunlight.",
-  "description.mekanismadvancedgenerators.advanced_cable": "An advanced universal cable capable of transferring enormous amounts of energy.",
+  "description.mekanismadvancedgenerators.cosmic_cable": "A Cosmic Universal Cable capable of transferring vast amounts of energy across dimensions.",
+  "description.mekanismadvancedgenerators.supreme_cable": "A Supreme Universal Cable engineered for extreme energy throughput.",
+  "description.mekanismadvancedgenerators.infinity_cable": "An Infinity Universal Cable with virtually limitless energy transfer capacity.",
+  "description.mekanismadvancedgenerators.galactic_cable": "A Galactic Universal Cable that channels the power of entire star systems.",
 
   "item.mekanismadvancedgenerators.carbone_solar_element": "Carbone Solar Element",
   "item.mekanismadvancedgenerators.hybrid_solar_element": "Hybrid Solar Element",

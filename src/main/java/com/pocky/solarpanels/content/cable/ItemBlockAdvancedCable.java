@@ -1,6 +1,6 @@
 package com.pocky.solarpanels.content.cable;
 
-import com.pocky.solarpanels.registries.SolarLang;
+import mekanism.api.text.ILangEntry;
 import java.util.List;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;
@@ -11,12 +11,15 @@ import net.minecraft.world.item.TooltipFlag;
 
 public class ItemBlockAdvancedCable extends BlockItem {
 
-    public ItemBlockAdvancedCable(BlockAdvancedCable block, Item.Properties properties) {
+    private final ILangEntry description;
+
+    public ItemBlockAdvancedCable(BlockAdvancedCable block, Item.Properties properties, ILangEntry description) {
         super(block, properties.rarity(Rarity.EPIC));
+        this.description = description;
     }
 
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag flag) {
-        tooltip.add(SolarLang.DESCRIPTION_ADVANCED_CABLE.translate());
+        tooltip.add(description.translate());
     }
 }
