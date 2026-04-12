@@ -5,6 +5,8 @@ import com.pocky.solarpanels.content.blocktype.Generator;
 import com.pocky.solarpanels.content.cable.AdvancedCableTier;
 import com.pocky.solarpanels.content.cable.BlockAdvancedCable;
 import com.pocky.solarpanels.content.cable.ItemBlockAdvancedCable;
+import com.pocky.solarpanels.content.energycube.AdvancedEnergyCubeTier;
+import com.pocky.solarpanels.content.energycube.ItemBlockAdvancedEnergyCube;
 import com.pocky.solarpanels.tile.TileEntityBigSolarGenerators;
 import com.pocky.solarpanels.tile.TileEntitySolarGenerators;
 import mekanism.common.block.BlockEnergyCube;
@@ -115,30 +117,34 @@ public class SolarBlocks {
                     .forItemHolder(holder -> holder.addAttachmentOnlyContainers(ContainerType.ITEM, () -> ItemSlotsBuilder.builder().addEnergy().build()));
 
     public static final BlockRegistryObject<BlockAdvancedCable, ItemBlockAdvancedCable> COSMIC_CABLE =
-            BLOCKS.register("cosmic_universal_cable", () -> new BlockAdvancedCable(SolarBlockTypes.COSMIC_CABLE, AdvancedCableTier.COSMIC), (block, props) -> new ItemBlockAdvancedCable(block, props, SolarLang.DESCRIPTION_COSMIC_CABLE));
+            BLOCKS.register("cosmic_universal_cable", () -> new BlockAdvancedCable(SolarBlockTypes.COSMIC_CABLE, AdvancedCableTier.COSMIC), ItemBlockAdvancedCable::new);
 
     public static final BlockRegistryObject<BlockAdvancedCable, ItemBlockAdvancedCable> SUPREME_CABLE =
-            BLOCKS.register("supreme_universal_cable", () -> new BlockAdvancedCable(SolarBlockTypes.SUPREME_CABLE, AdvancedCableTier.SUPREME), (block, props) -> new ItemBlockAdvancedCable(block, props, SolarLang.DESCRIPTION_SUPREME_CABLE));
+            BLOCKS.register("supreme_universal_cable", () -> new BlockAdvancedCable(SolarBlockTypes.SUPREME_CABLE, AdvancedCableTier.SUPREME), ItemBlockAdvancedCable::new);
 
     public static final BlockRegistryObject<BlockAdvancedCable, ItemBlockAdvancedCable> INFINITY_CABLE =
-            BLOCKS.register("infinity_universal_cable", () -> new BlockAdvancedCable(SolarBlockTypes.INFINITY_CABLE, AdvancedCableTier.INFINITY), (block, props) -> new ItemBlockAdvancedCable(block, props, SolarLang.DESCRIPTION_INFINITY_CABLE));
+            BLOCKS.register("infinity_universal_cable", () -> new BlockAdvancedCable(SolarBlockTypes.INFINITY_CABLE, AdvancedCableTier.INFINITY), ItemBlockAdvancedCable::new);
 
     public static final BlockRegistryObject<BlockAdvancedCable, ItemBlockAdvancedCable> GALACTIC_CABLE =
-            BLOCKS.register("galactic_universal_cable", () -> new BlockAdvancedCable(SolarBlockTypes.GALACTIC_CABLE, AdvancedCableTier.GALACTIC), (block, props) -> new ItemBlockAdvancedCable(block, props, SolarLang.DESCRIPTION_GALACTIC_CABLE));
+            BLOCKS.register("galactic_universal_cable", () -> new BlockAdvancedCable(SolarBlockTypes.GALACTIC_CABLE, AdvancedCableTier.GALACTIC), ItemBlockAdvancedCable::new);
 
-    public static final BlockRegistryObject<BlockEnergyCube, ItemBlockEnergyCube> COSMIC_ENERGY_CUBE =
-            BLOCKS.register("cosmic_energy_cube", () -> new BlockEnergyCube(SolarBlockTypes.COSMIC_ENERGY_CUBE), ItemBlockEnergyCube::new)
+    public static final BlockRegistryObject<BlockEnergyCube, ItemBlockAdvancedEnergyCube> COSMIC_ENERGY_CUBE =
+            BLOCKS.register("cosmic_energy_cube", () -> new BlockEnergyCube(SolarBlockTypes.COSMIC_ENERGY_CUBE),
+                            (block, props) -> new ItemBlockAdvancedEnergyCube(block, props, AdvancedEnergyCubeTier.COSMIC))
                     .forItemHolder(holder -> holder.addAttachmentOnlyContainers(ContainerType.ITEM, () -> ItemSlotsBuilder.builder().addEnergy().build()));
 
-    public static final BlockRegistryObject<BlockEnergyCube, ItemBlockEnergyCube> SUPREME_ENERGY_CUBE =
-            BLOCKS.register("supreme_energy_cube", () -> new BlockEnergyCube(SolarBlockTypes.SUPREME_ENERGY_CUBE), ItemBlockEnergyCube::new)
+    public static final BlockRegistryObject<BlockEnergyCube, ItemBlockAdvancedEnergyCube> SUPREME_ENERGY_CUBE =
+            BLOCKS.register("supreme_energy_cube", () -> new BlockEnergyCube(SolarBlockTypes.SUPREME_ENERGY_CUBE),
+                            (block, props) -> new ItemBlockAdvancedEnergyCube(block, props, AdvancedEnergyCubeTier.SUPREME))
                     .forItemHolder(holder -> holder.addAttachmentOnlyContainers(ContainerType.ITEM, () -> ItemSlotsBuilder.builder().addEnergy().build()));
 
-    public static final BlockRegistryObject<BlockEnergyCube, ItemBlockEnergyCube> INFINITY_ENERGY_CUBE =
-            BLOCKS.register("infinity_energy_cube", () -> new BlockEnergyCube(SolarBlockTypes.INFINITY_ENERGY_CUBE), ItemBlockEnergyCube::new)
+    public static final BlockRegistryObject<BlockEnergyCube, ItemBlockAdvancedEnergyCube> INFINITY_ENERGY_CUBE =
+            BLOCKS.register("infinity_energy_cube", () -> new BlockEnergyCube(SolarBlockTypes.INFINITY_ENERGY_CUBE),
+                            (block, props) -> new ItemBlockAdvancedEnergyCube(block, props, AdvancedEnergyCubeTier.INFINITY))
                     .forItemHolder(holder -> holder.addAttachmentOnlyContainers(ContainerType.ITEM, () -> ItemSlotsBuilder.builder().addEnergy().build()));
 
-    public static final BlockRegistryObject<BlockEnergyCube, ItemBlockEnergyCube> GALACTIC_ENERGY_CUBE =
-            BLOCKS.register("galactic_energy_cube", () -> new BlockEnergyCube(SolarBlockTypes.GALACTIC_ENERGY_CUBE), ItemBlockEnergyCube::new)
+    public static final BlockRegistryObject<BlockEnergyCube, ItemBlockAdvancedEnergyCube> GALACTIC_ENERGY_CUBE =
+            BLOCKS.register("galactic_energy_cube", () -> new BlockEnergyCube(SolarBlockTypes.GALACTIC_ENERGY_CUBE),
+                            (block, props) -> new ItemBlockAdvancedEnergyCube(block, props, AdvancedEnergyCubeTier.GALACTIC))
                     .forItemHolder(holder -> holder.addAttachmentOnlyContainers(ContainerType.ITEM, () -> ItemSlotsBuilder.builder().addEnergy().build()));
 }

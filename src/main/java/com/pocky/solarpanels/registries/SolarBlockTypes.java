@@ -5,6 +5,7 @@ import com.pocky.solarpanels.content.blocktype.BlockShapes;
 import com.pocky.solarpanels.content.blocktype.Generator;
 import com.pocky.solarpanels.content.cable.TileEntityAdvancedCable;
 import com.pocky.solarpanels.content.energycube.AdvancedEnergyCubeTier;
+import com.pocky.solarpanels.content.energycube.AttributeAdvancedTier;
 import com.pocky.solarpanels.tile.TileEntityBigSolarGenerators;
 import com.pocky.solarpanels.tile.TileEntitySolarGenerators;
 import java.util.function.Supplier;
@@ -267,7 +268,7 @@ public class SolarBlockTypes {
         return MachineBuilder.<TileEntityEnergyCube>createMachine(tile, description)
                 .withGui(() -> MekanismContainerTypes.ENERGY_CUBE)
                 .withEnergyConfig(tier::getMaxEnergy)
-                .with(new AttributeTier<>(EnergyCubeTier.ULTIMATE), new AttributeStateFacing(BlockStateProperties.FACING))
+                .with(new AttributeTier<>(EnergyCubeTier.ULTIMATE), new AttributeStateFacing(BlockStateProperties.FACING), new AttributeAdvancedTier(tier))
                 .withSideConfig(TransmissionType.ENERGY, TransmissionType.ITEM)
                 .without(AttributeParticleFX.class, AttributeStateActive.class, AttributeUpgradeSupport.class)
                 .build();

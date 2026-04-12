@@ -57,7 +57,9 @@
       "Bash(cmd /c \"gradlew.bat compileJava 2>&1\")",
       "Bash(powershell -Command \"Set-Location 'C:\\\\Users\\\\rkush\\\\OneDrive\\\\Desktop\\\\бобота\\\\Mekanism Advanced Generators'; .\\\\gradlew.bat compileJava 2>&1 | Select-Object -Last 60\")",
       "Bash(powershell -Command \"Get-ChildItem 'C:\\\\Program Files\\\\Java\\\\' -ErrorAction SilentlyContinue; Get-ChildItem 'C:\\\\Program Files\\\\Eclipse Adoptium\\\\' -ErrorAction SilentlyContinue; Get-ChildItem 'C:\\\\Program Files\\\\Microsoft\\\\' -ErrorAction SilentlyContinue | Where-Object {$_.Name -like '*jdk*'}\")",
-      "Bash(powershell -Command \"Set-Location 'C:\\\\Users\\\\rkush\\\\OneDrive\\\\Desktop\\\\бобота\\\\Mekanism Advanced Generators'; \\\\$env:JAVA_HOME='C:\\\\Program Files\\\\Java\\\\jdk-24'; .\\\\gradlew.bat compileJava 2>&1 | Select-Object -Last 60\")"
+      "Bash(powershell -Command \"Set-Location 'C:\\\\Users\\\\rkush\\\\OneDrive\\\\Desktop\\\\бобота\\\\Mekanism Advanced Generators'; \\\\$env:JAVA_HOME='C:\\\\Program Files\\\\Java\\\\jdk-24'; .\\\\gradlew.bat compileJava 2>&1 | Select-Object -Last 60\")",
+      "Bash(powershell:*)",
+      "Bash(unzip:*)"
     ]
   }
 }

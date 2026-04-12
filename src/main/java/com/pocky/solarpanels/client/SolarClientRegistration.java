@@ -8,6 +8,8 @@ import com.pocky.solarpanels.tile.TileEntitySolarGenerator;
 import mekanism.client.ClientRegistration;
 import mekanism.client.ClientRegistrationUtil;
 import mekanism.client.model.baked.ExtensionBakedModel.TransformedBakedModel;
+import mekanism.client.render.RenderPropertiesProvider.MekRenderProperties;
+import mekanism.client.render.item.block.RenderEnergyCubeItem;
 import mekanism.client.render.lib.QuadTransformation;
 import mekanism.common.inventory.container.tile.MekanismTileContainer;
 import net.minecraft.network.chat.Component;
@@ -16,6 +18,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 
 @EventBusSubscriber(modid = SolarPanelsMod.MODID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
@@ -37,6 +40,13 @@ public class SolarClientRegistration {
         ClientRegistration.addCustomModel(SolarBlocks.BIG_LIGHT_ABSORBING_SOLAR_GENERATOR, (orig, evt) -> new TransformedBakedModel<Void>(orig, QuadTransformation.translate(0, 1, 0)));
         ClientRegistration.addCustomModel(SolarBlocks.BIG_PHOTONIC_SOLAR_GENERATOR, (orig, evt) -> new TransformedBakedModel<Void>(orig, QuadTransformation.translate(0, 1, 0)));
         ClientRegistration.addCustomModel(SolarBlocks.BIG_CREATIVE_SOLAR_GENERATOR, (orig, evt) -> new TransformedBakedModel<Void>(orig, QuadTransformation.translate(0, 1, 0)));
+    }
+
+    @SubscribeEvent
+    public static void registerClientExtensions(RegisterClientExtensionsEvent event) {
+        ClientRegistrationUtil.registerItemExtensions(event, new MekRenderProperties(RenderEnergyCubeItem.RENDERER),
+                SolarBlocks.COSMIC_ENERGY_CUBE, SolarBlocks.SUPREME_ENERGY_CUBE,
+                SolarBlocks.INFINITY_ENERGY_CUBE, SolarBlocks.GALACTIC_ENERGY_CUBE);
     }
 
     @SuppressWarnings("Convert2MethodRef")

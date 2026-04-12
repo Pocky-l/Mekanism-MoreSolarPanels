@@ -5,6 +5,7 @@ import com.pocky.solarpanels.content.cable.TileEntityAdvancedCable;
 import com.pocky.solarpanels.content.cable.TileEntityAdvancedCables;
 import com.pocky.solarpanels.tile.TileEntityBigSolarGenerators;
 import com.pocky.solarpanels.tile.TileEntitySolarGenerators;
+import com.pocky.solarpanels.content.energycube.TileEntityAdvancedEnergyCube;
 import mekanism.common.block.BlockEnergyCube;
 import mekanism.common.capabilities.Capabilities;
 import mekanism.common.integration.energy.EnergyCompatUtils;
@@ -178,9 +179,11 @@ public class SolarTileEntityTypes {
     public static final TileEntityTypeRegistryObject<TileEntityEnergyCube> INFINITY_ENERGY_CUBE = registerAdvancedEnergyCube(SolarBlocks.INFINITY_ENERGY_CUBE);
     public static final TileEntityTypeRegistryObject<TileEntityEnergyCube> GALACTIC_ENERGY_CUBE = registerAdvancedEnergyCube(SolarBlocks.GALACTIC_ENERGY_CUBE);
 
+    @SuppressWarnings("unchecked")
     private static TileEntityTypeRegistryObject<TileEntityEnergyCube> registerAdvancedEnergyCube(
             DeferredHolder<net.minecraft.world.level.block.Block, BlockEnergyCube> block) {
-        return TILE_ENTITY_TYPES.mekBuilder(block, (pos, state) -> new TileEntityEnergyCube(block, pos, state))
+        return (TileEntityTypeRegistryObject<TileEntityEnergyCube>) (Object) TILE_ENTITY_TYPES.mekBuilder(block,
+                        (pos, state) -> new TileEntityAdvancedEnergyCube(block, pos, state))
                 .serverTicker(TileEntityMekanism::tickServer)
                 .withSimple(Capabilities.CONFIG_CARD)
                 .build();

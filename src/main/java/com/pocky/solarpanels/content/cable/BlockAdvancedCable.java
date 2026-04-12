@@ -1,9 +1,13 @@
 package com.pocky.solarpanels.content.cable;
 
+import mekanism.api.annotations.NothingNullByDefault;
+import mekanism.api.text.ILangEntry;
+import mekanism.common.block.interfaces.IHasDescription;
 import mekanism.common.block.transmitter.BlockSmallTransmitter;
 import mekanism.common.content.blocktype.BlockTypeTile;
 
-public class BlockAdvancedCable extends BlockSmallTransmitter<TileEntityAdvancedCable> {
+@NothingNullByDefault
+public class BlockAdvancedCable extends BlockSmallTransmitter<TileEntityAdvancedCable> implements IHasDescription {
 
     private final AdvancedCableTier advancedTier;
 
@@ -14,5 +18,10 @@ public class BlockAdvancedCable extends BlockSmallTransmitter<TileEntityAdvanced
 
     public AdvancedCableTier getAdvancedTier() {
         return advancedTier;
+    }
+
+    @Override
+    public ILangEntry getDescription() {
+        return advancedTier.getDescription();
     }
 }
