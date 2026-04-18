@@ -13,6 +13,19 @@
     "mekanismadvancedgenerators:singular_solar_panel",
     "mekanismadvancedgenerators:light_absorbing_solar_panel",
     "mekanismadvancedgenerators:photonic_solar_panel",
-    "mekanismadvancedgenerators:creative_solar_panel"
+    "mekanismadvancedgenerators:creative_solar_panel",
+    "mekanismadvancedgenerators:cosmic_energy_cube",
+    "mekanismadvancedgenerators:supreme_energy_cube",
+    "mekanismadvancedgenerators:infinity_energy_cube",
+    "mekanismadvancedgenerators:galactic_energy_cube",
+    "mekanismadvancedgenerators:big_advanced_solar_generator",
+    "mekanismadvancedgenerators:big_hybrid_solar_generator",
+    "mekanismadvancedgenerators:big_ultimate_solar_generator",
+    "mekanismadvancedgenerators:big_quantum_solar_generator",
+    "mekanismadvancedgenerators:big_spectral_solar_generator",
+    "mekanismadvancedgenerators:big_singular_solar_generator",
+    "mekanismadvancedgenerators:big_light_absorbing_solar_generator",
+    "mekanismadvancedgenerators:big_photonic_solar_generator",
+    "mekanismadvancedgenerators:big_creative_solar_generator"
   ]
 }

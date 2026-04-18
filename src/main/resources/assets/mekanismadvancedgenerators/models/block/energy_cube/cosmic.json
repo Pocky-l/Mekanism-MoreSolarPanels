@@ -1,6 +1,10 @@
 {
-  "parent": "mekanism:block/energy_cube/base",
+  "parent": "mekanismadvancedgenerators:block/energy_cube/base",
   "textures": {
-    "corner": "mekanism:block/models/energy_cube_advanced_corner"
+    "1": "mekanismadvancedgenerators:block/models/energy_cube_cosmic",
+    "2": "mekanismadvancedgenerators:block/models/ports_cosmic",
+    "3": "mekanismadvancedgenerators:block/models/ports_led_cosmic",
+    "4": "mekanismadvancedgenerators:block/models/leds_cosmic",
+    "corner": "mekanismadvancedgenerators:block/models/energy_cube_cosmic_corner"
   }
 }

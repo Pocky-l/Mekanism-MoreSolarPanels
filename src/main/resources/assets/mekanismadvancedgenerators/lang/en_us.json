@@ -31,6 +31,11 @@
   "block.mekanismadvancedgenerators.big_photonic_solar_generator": "Big Photonic Solar Generator",
   "block.mekanismadvancedgenerators.big_creative_solar_generator": "Big Creative Solar Generator",
 
+  "container.mekanismadvancedgenerators.cosmic_energy_cube": "Cosmic Energy Cube",
+  "container.mekanismadvancedgenerators.supreme_energy_cube": "Supreme Energy Cube",
+  "container.mekanismadvancedgenerators.infinity_energy_cube": "Infinity Energy Cube",
+  "container.mekanismadvancedgenerators.galactic_energy_cube": "Galactic Energy Cube",
+
   "container.mekanismadvancedgenerators.advanced_solar_panel": "Advanced Solar Panel",
   "container.mekanismadvancedgenerators.hybrid_solar_panel": "Hybrid Solar Panel",
   "container.mekanismadvancedgenerators.ultimate_solar_panel": "Ultimate Hybrid Solar Panel",

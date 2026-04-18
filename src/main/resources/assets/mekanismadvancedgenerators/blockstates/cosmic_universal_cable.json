@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "mekanism:block/transmitter/small/universal_cable/ultimate"
+      "model": "mekanismadvancedgenerators:block/transmitter/small/universal_cable/cosmic"
     }
   }
 }

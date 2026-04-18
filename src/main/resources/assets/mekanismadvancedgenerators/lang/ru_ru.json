@@ -21,6 +21,11 @@
   "block.mekanismadvancedgenerators.photonic_solar_panel": "Photonic Solar Panel",
   "block.mekanismadvancedgenerators.creative_solar_panel": "Creative Solar Panel",
 
+  "container.mekanismadvancedgenerators.cosmic_energy_cube": "Космический энергокуб",
+  "container.mekanismadvancedgenerators.supreme_energy_cube": "Верховный энергокуб",
+  "container.mekanismadvancedgenerators.infinity_energy_cube": "Бесконечный энергокуб",
+  "container.mekanismadvancedgenerators.galactic_energy_cube": "Галактический энергокуб",
+
   "container.mekanismadvancedgenerators.advanced_solar_panel": "Advanced Solar Panel",
   "container.mekanismadvancedgenerators.hybrid_solar_panel": "Hybrid Solar Panel",
   "container.mekanismadvancedgenerators.ultimate_solar_panel": "Ultimate Hybrid Solar Panel",

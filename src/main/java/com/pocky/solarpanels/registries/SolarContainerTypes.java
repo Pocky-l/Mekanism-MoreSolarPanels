@@ -5,6 +5,7 @@ import com.pocky.solarpanels.tile.TileEntitySolarGenerator;
 import mekanism.common.inventory.container.tile.MekanismTileContainer;
 import mekanism.common.registration.impl.ContainerTypeDeferredRegister;
 import mekanism.common.registration.impl.ContainerTypeRegistryObject;
+import mekanism.common.tile.TileEntityEnergyCube;
 
 public class SolarContainerTypes {
 
@@ -12,6 +13,9 @@ public class SolarContainerTypes {
     }
 
     public static final ContainerTypeDeferredRegister CONTAINER_TYPES = new ContainerTypeDeferredRegister(SolarPanelsMod.MODID);
+
+    public static final ContainerTypeRegistryObject<MekanismTileContainer<TileEntityEnergyCube>> ADVANCED_ENERGY_CUBE =
+            CONTAINER_TYPES.custom("advanced_energy_cube", TileEntityEnergyCube.class).armorSideBar(180, 41, 0).build();
 
     public static final ContainerTypeRegistryObject<MekanismTileContainer<TileEntitySolarGenerator>> ADVANCED_SOLAR_PANEL =
             CONTAINER_TYPES.custom("advanced_solar_panel", TileEntitySolarGenerator.class).armorSideBar(-20, 11, 0).build();

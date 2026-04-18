@@ -21,6 +21,11 @@
   "block.mekanismadvancedgenerators.photonic_solar_panel": "光子太阳能板",
   "block.mekanismadvancedgenerators.creative_solar_panel": "创造太阳能板",
 
+  "container.mekanismadvancedgenerators.cosmic_energy_cube": "宇宙能量方块",
+  "container.mekanismadvancedgenerators.supreme_energy_cube": "至高能量方块",
+  "container.mekanismadvancedgenerators.infinity_energy_cube": "无限能量方块",
+  "container.mekanismadvancedgenerators.galactic_energy_cube": "银河能量方块",
+
   "container.mekanismadvancedgenerators.advanced_solar_panel": "高级太阳能板",
   "container.mekanismadvancedgenerators.hybrid_solar_panel": "混合太阳能板",
   "container.mekanismadvancedgenerators.ultimate_solar_panel": "终极混合太阳能板",

@@ -97,8 +97,8 @@ dependencies {
     implementation "net.neoforged:neoforge:${neo_version}"
     compileOnly "mekanism:Mekanism:${minecraft_version}-${mekanism_version}"
     compileOnly "mekanism:Mekanism:${minecraft_version}-${mekanism_version}:generators"
-    localRuntime files("libs/Mekanism-${minecraft_version}-${mekanism_version}.jar")
-    localRuntime files("libs/Mekanism-${minecraft_version}-${mekanism_version}-generators.jar")
+    localRuntime "mekanism:Mekanism:${minecraft_version}-${mekanism_version}"
+    localRuntime "mekanism:Mekanism:${minecraft_version}-${mekanism_version}:generators"
 
     // JEI — only for running in IDE, not shipped as dependency
     localRuntime "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"

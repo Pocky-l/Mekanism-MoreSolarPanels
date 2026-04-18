@@ -28,7 +28,6 @@ import mekanism.common.content.blocktype.Machine;
 import mekanism.common.content.blocktype.Machine.MachineBuilder;
 import mekanism.common.lib.transmitter.TransmissionType;
 import mekanism.common.registration.impl.TileEntityTypeRegistryObject;
-import mekanism.common.registries.MekanismContainerTypes;
 import mekanism.common.tier.CableTier;
 import mekanism.common.tier.EnergyCubeTier;
 import mekanism.common.tile.TileEntityEnergyCube;
@@ -266,7 +265,7 @@ public class SolarBlockTypes {
     private static Machine<TileEntityEnergyCube> createAdvancedEnergyCube(AdvancedEnergyCubeTier tier, ILangEntry description,
             Supplier<TileEntityTypeRegistryObject<TileEntityEnergyCube>> tile) {
         return MachineBuilder.<TileEntityEnergyCube>createMachine(tile, description)
-                .withGui(() -> MekanismContainerTypes.ENERGY_CUBE)
+                .withGui(() -> SolarContainerTypes.ADVANCED_ENERGY_CUBE)
                 .withEnergyConfig(tier::getMaxEnergy)
                 .with(new AttributeTier<>(EnergyCubeTier.ULTIMATE), new AttributeStateFacing(BlockStateProperties.FACING), new AttributeAdvancedTier(tier))
                 .withSideConfig(TransmissionType.ENERGY, TransmissionType.ITEM)
