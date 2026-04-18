@@ -1,6 +1,7 @@
 package com.pocky.solarpanels.registries;
 
 import com.pocky.solarpanels.SolarPanelsMod;
+import com.pocky.solarpanels.content.block.BlockBigSolarGenerator;
 import com.pocky.solarpanels.content.blocktype.Generator;
 import com.pocky.solarpanels.content.cable.AdvancedCableTier;
 import com.pocky.solarpanels.content.cable.BlockAdvancedCable;
@@ -71,49 +72,49 @@ public class SolarBlocks {
             BLOCKS.registerDetails("creative_solar_panel", () -> new BlockTileModel<>(SolarBlockTypes.CREATIVE_SOLAR_PANEL, props -> props.mapColor(MapColor.COLOR_BLUE)))
                     .forItemHolder(holder -> holder.addAttachmentOnlyContainers(ContainerType.ITEM, () -> ItemSlotsBuilder.builder().addEnergy().build()));
 
-    public static final BlockRegistryObject<BlockTileModel<TileEntityBigSolarGenerators.Advanced, Generator<TileEntityBigSolarGenerators.Advanced>>,
-            ItemBlockTooltip<BlockTileModel<TileEntityBigSolarGenerators.Advanced, Generator<TileEntityBigSolarGenerators.Advanced>>>> BIG_ADVANCED_SOLAR_GENERATOR =
-            BLOCKS.registerDetails("big_advanced_solar_generator", () -> new BlockTileModel<>(SolarBlockTypes.BIG_ADVANCED_SOLAR_GENERATOR, props -> props.mapColor(MapColor.COLOR_BLUE)))
+    public static final BlockRegistryObject<BlockBigSolarGenerator<TileEntityBigSolarGenerators.Advanced, Generator<TileEntityBigSolarGenerators.Advanced>>,
+            ItemBlockTooltip<BlockBigSolarGenerator<TileEntityBigSolarGenerators.Advanced, Generator<TileEntityBigSolarGenerators.Advanced>>>> BIG_ADVANCED_SOLAR_GENERATOR =
+            BLOCKS.registerDetails("big_advanced_solar_generator", () -> new BlockBigSolarGenerator<>(SolarBlockTypes.BIG_ADVANCED_SOLAR_GENERATOR, props -> props.mapColor(MapColor.COLOR_BLUE)))
                     .forItemHolder(holder -> holder.addAttachmentOnlyContainers(ContainerType.ITEM, () -> ItemSlotsBuilder.builder().addEnergy().build()));
 
-    public static final BlockRegistryObject<BlockTileModel<TileEntityBigSolarGenerators.Hybrid, Generator<TileEntityBigSolarGenerators.Hybrid>>,
-            ItemBlockTooltip<BlockTileModel<TileEntityBigSolarGenerators.Hybrid, Generator<TileEntityBigSolarGenerators.Hybrid>>>> BIG_HYBRID_SOLAR_GENERATOR =
-            BLOCKS.registerDetails("big_hybrid_solar_generator", () -> new BlockTileModel<>(SolarBlockTypes.BIG_HYBRID_SOLAR_GENERATOR, props -> props.mapColor(MapColor.COLOR_BLUE)))
+    public static final BlockRegistryObject<BlockBigSolarGenerator<TileEntityBigSolarGenerators.Hybrid, Generator<TileEntityBigSolarGenerators.Hybrid>>,
+            ItemBlockTooltip<BlockBigSolarGenerator<TileEntityBigSolarGenerators.Hybrid, Generator<TileEntityBigSolarGenerators.Hybrid>>>> BIG_HYBRID_SOLAR_GENERATOR =
+            BLOCKS.registerDetails("big_hybrid_solar_generator", () -> new BlockBigSolarGenerator<>(SolarBlockTypes.BIG_HYBRID_SOLAR_GENERATOR, props -> props.mapColor(MapColor.COLOR_BLUE)))
                     .forItemHolder(holder -> holder.addAttachmentOnlyContainers(ContainerType.ITEM, () -> ItemSlotsBuilder.builder().addEnergy().build()));
 
-    public static final BlockRegistryObject<BlockTileModel<TileEntityBigSolarGenerators.Ultimate, Generator<TileEntityBigSolarGenerators.Ultimate>>,
-            ItemBlockTooltip<BlockTileModel<TileEntityBigSolarGenerators.Ultimate, Generator<TileEntityBigSolarGenerators.Ultimate>>>> BIG_ULTIMATE_SOLAR_GENERATOR =
-            BLOCKS.registerDetails("big_ultimate_solar_generator", () -> new BlockTileModel<>(SolarBlockTypes.BIG_ULTIMATE_SOLAR_GENERATOR, props -> props.mapColor(MapColor.COLOR_BLUE)))
+    public static final BlockRegistryObject<BlockBigSolarGenerator<TileEntityBigSolarGenerators.Ultimate, Generator<TileEntityBigSolarGenerators.Ultimate>>,
+            ItemBlockTooltip<BlockBigSolarGenerator<TileEntityBigSolarGenerators.Ultimate, Generator<TileEntityBigSolarGenerators.Ultimate>>>> BIG_ULTIMATE_SOLAR_GENERATOR =
+            BLOCKS.registerDetails("big_ultimate_solar_generator", () -> new BlockBigSolarGenerator<>(SolarBlockTypes.BIG_ULTIMATE_SOLAR_GENERATOR, props -> props.mapColor(MapColor.COLOR_BLUE)))
                     .forItemHolder(holder -> holder.addAttachmentOnlyContainers(ContainerType.ITEM, () -> ItemSlotsBuilder.builder().addEnergy().build()));
 
-    public static final BlockRegistryObject<BlockTileModel<TileEntityBigSolarGenerators.Quantum, Generator<TileEntityBigSolarGenerators.Quantum>>,
-            ItemBlockTooltip<BlockTileModel<TileEntityBigSolarGenerators.Quantum, Generator<TileEntityBigSolarGenerators.Quantum>>>> BIG_QUANTUM_SOLAR_GENERATOR =
-            BLOCKS.registerDetails("big_quantum_solar_generator", () -> new BlockTileModel<>(SolarBlockTypes.BIG_QUANTUM_SOLAR_GENERATOR, props -> props.mapColor(MapColor.COLOR_BLUE)))
+    public static final BlockRegistryObject<BlockBigSolarGenerator<TileEntityBigSolarGenerators.Quantum, Generator<TileEntityBigSolarGenerators.Quantum>>,
+            ItemBlockTooltip<BlockBigSolarGenerator<TileEntityBigSolarGenerators.Quantum, Generator<TileEntityBigSolarGenerators.Quantum>>>> BIG_QUANTUM_SOLAR_GENERATOR =
+            BLOCKS.registerDetails("big_quantum_solar_generator", () -> new BlockBigSolarGenerator<>(SolarBlockTypes.BIG_QUANTUM_SOLAR_GENERATOR, props -> props.mapColor(MapColor.COLOR_BLUE)))
                     .forItemHolder(holder -> holder.addAttachmentOnlyContainers(ContainerType.ITEM, () -> ItemSlotsBuilder.builder().addEnergy().build()));
 
-    public static final BlockRegistryObject<BlockTileModel<TileEntityBigSolarGenerators.Spectral, Generator<TileEntityBigSolarGenerators.Spectral>>,
-            ItemBlockTooltip<BlockTileModel<TileEntityBigSolarGenerators.Spectral, Generator<TileEntityBigSolarGenerators.Spectral>>>> BIG_SPECTRAL_SOLAR_GENERATOR =
-            BLOCKS.registerDetails("big_spectral_solar_generator", () -> new BlockTileModel<>(SolarBlockTypes.BIG_SPECTRAL_SOLAR_GENERATOR, props -> props.mapColor(MapColor.COLOR_BLUE)))
+    public static final BlockRegistryObject<BlockBigSolarGenerator<TileEntityBigSolarGenerators.Spectral, Generator<TileEntityBigSolarGenerators.Spectral>>,
+            ItemBlockTooltip<BlockBigSolarGenerator<TileEntityBigSolarGenerators.Spectral, Generator<TileEntityBigSolarGenerators.Spectral>>>> BIG_SPECTRAL_SOLAR_GENERATOR =
+            BLOCKS.registerDetails("big_spectral_solar_generator", () -> new BlockBigSolarGenerator<>(SolarBlockTypes.BIG_SPECTRAL_SOLAR_GENERATOR, props -> props.mapColor(MapColor.COLOR_BLUE)))
                     .forItemHolder(holder -> holder.addAttachmentOnlyContainers(ContainerType.ITEM, () -> ItemSlotsBuilder.builder().addEnergy().build()));
 
-    public static final BlockRegistryObject<BlockTileModel<TileEntityBigSolarGenerators.Singular, Generator<TileEntityBigSolarGenerators.Singular>>,
-            ItemBlockTooltip<BlockTileModel<TileEntityBigSolarGenerators.Singular, Generator<TileEntityBigSolarGenerators.Singular>>>> BIG_SINGULAR_SOLAR_GENERATOR =
-            BLOCKS.registerDetails("big_singular_solar_generator", () -> new BlockTileModel<>(SolarBlockTypes.BIG_SINGULAR_SOLAR_GENERATOR, props -> props.mapColor(MapColor.COLOR_BLUE)))
+    public static final BlockRegistryObject<BlockBigSolarGenerator<TileEntityBigSolarGenerators.Singular, Generator<TileEntityBigSolarGenerators.Singular>>,
+            ItemBlockTooltip<BlockBigSolarGenerator<TileEntityBigSolarGenerators.Singular, Generator<TileEntityBigSolarGenerators.Singular>>>> BIG_SINGULAR_SOLAR_GENERATOR =
+            BLOCKS.registerDetails("big_singular_solar_generator", () -> new BlockBigSolarGenerator<>(SolarBlockTypes.BIG_SINGULAR_SOLAR_GENERATOR, props -> props.mapColor(MapColor.COLOR_BLUE)))
                     .forItemHolder(holder -> holder.addAttachmentOnlyContainers(ContainerType.ITEM, () -> ItemSlotsBuilder.builder().addEnergy().build()));
 
-    public static final BlockRegistryObject<BlockTileModel<TileEntityBigSolarGenerators.LightAbsorbing, Generator<TileEntityBigSolarGenerators.LightAbsorbing>>,
-            ItemBlockTooltip<BlockTileModel<TileEntityBigSolarGenerators.LightAbsorbing, Generator<TileEntityBigSolarGenerators.LightAbsorbing>>>> BIG_LIGHT_ABSORBING_SOLAR_GENERATOR =
-            BLOCKS.registerDetails("big_light_absorbing_solar_generator", () -> new BlockTileModel<>(SolarBlockTypes.BIG_LIGHT_ABSORBING_SOLAR_GENERATOR, props -> props.mapColor(MapColor.COLOR_BLUE)))
+    public static final BlockRegistryObject<BlockBigSolarGenerator<TileEntityBigSolarGenerators.LightAbsorbing, Generator<TileEntityBigSolarGenerators.LightAbsorbing>>,
+            ItemBlockTooltip<BlockBigSolarGenerator<TileEntityBigSolarGenerators.LightAbsorbing, Generator<TileEntityBigSolarGenerators.LightAbsorbing>>>> BIG_LIGHT_ABSORBING_SOLAR_GENERATOR =
+            BLOCKS.registerDetails("big_light_absorbing_solar_generator", () -> new BlockBigSolarGenerator<>(SolarBlockTypes.BIG_LIGHT_ABSORBING_SOLAR_GENERATOR, props -> props.mapColor(MapColor.COLOR_BLUE)))
                     .forItemHolder(holder -> holder.addAttachmentOnlyContainers(ContainerType.ITEM, () -> ItemSlotsBuilder.builder().addEnergy().build()));
 
-    public static final BlockRegistryObject<BlockTileModel<TileEntityBigSolarGenerators.Photonic, Generator<TileEntityBigSolarGenerators.Photonic>>,
-            ItemBlockTooltip<BlockTileModel<TileEntityBigSolarGenerators.Photonic, Generator<TileEntityBigSolarGenerators.Photonic>>>> BIG_PHOTONIC_SOLAR_GENERATOR =
-            BLOCKS.registerDetails("big_photonic_solar_generator", () -> new BlockTileModel<>(SolarBlockTypes.BIG_PHOTONIC_SOLAR_GENERATOR, props -> props.mapColor(MapColor.COLOR_BLUE)))
+    public static final BlockRegistryObject<BlockBigSolarGenerator<TileEntityBigSolarGenerators.Photonic, Generator<TileEntityBigSolarGenerators.Photonic>>,
+            ItemBlockTooltip<BlockBigSolarGenerator<TileEntityBigSolarGenerators.Photonic, Generator<TileEntityBigSolarGenerators.Photonic>>>> BIG_PHOTONIC_SOLAR_GENERATOR =
+            BLOCKS.registerDetails("big_photonic_solar_generator", () -> new BlockBigSolarGenerator<>(SolarBlockTypes.BIG_PHOTONIC_SOLAR_GENERATOR, props -> props.mapColor(MapColor.COLOR_BLUE)))
                     .forItemHolder(holder -> holder.addAttachmentOnlyContainers(ContainerType.ITEM, () -> ItemSlotsBuilder.builder().addEnergy().build()));
 
-    public static final BlockRegistryObject<BlockTileModel<TileEntityBigSolarGenerators.Creative, Generator<TileEntityBigSolarGenerators.Creative>>,
-            ItemBlockTooltip<BlockTileModel<TileEntityBigSolarGenerators.Creative, Generator<TileEntityBigSolarGenerators.Creative>>>> BIG_CREATIVE_SOLAR_GENERATOR =
-            BLOCKS.registerDetails("big_creative_solar_generator", () -> new BlockTileModel<>(SolarBlockTypes.BIG_CREATIVE_SOLAR_GENERATOR, props -> props.mapColor(MapColor.COLOR_BLUE)))
+    public static final BlockRegistryObject<BlockBigSolarGenerator<TileEntityBigSolarGenerators.Creative, Generator<TileEntityBigSolarGenerators.Creative>>,
+            ItemBlockTooltip<BlockBigSolarGenerator<TileEntityBigSolarGenerators.Creative, Generator<TileEntityBigSolarGenerators.Creative>>>> BIG_CREATIVE_SOLAR_GENERATOR =
+            BLOCKS.registerDetails("big_creative_solar_generator", () -> new BlockBigSolarGenerator<>(SolarBlockTypes.BIG_CREATIVE_SOLAR_GENERATOR, props -> props.mapColor(MapColor.COLOR_BLUE)))
                     .forItemHolder(holder -> holder.addAttachmentOnlyContainers(ContainerType.ITEM, () -> ItemSlotsBuilder.builder().addEnergy().build()));
 
     public static final BlockRegistryObject<BlockAdvancedCable, ItemBlockAdvancedCable> COSMIC_CABLE =
