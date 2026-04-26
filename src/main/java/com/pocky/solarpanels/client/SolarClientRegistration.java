@@ -35,6 +35,7 @@ public class SolarClientRegistration {
 
     @SubscribeEvent
     public static void init(FMLClientSetupEvent event) {
+        GeneratorClientSoundManager.register();
         // Big solar generators use a model with Y=-16 base (same as Mekanism's advanced_solar_generator),
         // so they need to be translated up 1 block to render correctly at surface level.
         ClientRegistration.addCustomModel(SolarBlocks.BIG_ADVANCED_SOLAR_GENERATOR, (orig, evt) -> new TransformedBakedModel<Void>(orig, QuadTransformation.translate(0, 1, 0)));
