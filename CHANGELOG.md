@@ -21,6 +21,9 @@ Versions before 2.3.0 are listed on [CurseForge](https://www.curseforge.com/mine
 - The config screen shows a readable name and description for every option instead of the same "Energy Generation"
   title nine times.
 - All items are in the shared "Pocky Mods" creative tab (and still in the vanilla tabs).
+- New textures: the solar panels, big solar generators and solar elements have real photovoltaic cells with bus bars
+  and a glossy highlight, the energy cubes a light steel body of their own, and the universal cables metal in the
+  colour of their tier.
 - New logo.
 - Requires [Mekanism](https://www.curseforge.com/minecraft/mc-mods/mekanism) 10.7.11 or newer (tested with every
   release up to 10.7.19). Older Mekanism versions have a different internal API and were
