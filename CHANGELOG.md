@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 Versions before 2.3.0 are listed on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/mekanism-advancedgenerators/files).
 
-## [2.3.0] - Unreleased
+## [2.3.0] - 2026-10-13
 ### Added
 - [Jade](https://www.curseforge.com/minecraft/mc-mods/jade) shows how much a solar panel or big solar generator is
   producing right now and whether it sees the sun.
