@@ -23,6 +23,7 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
 import com.pockyl.mekanismadvancedgenerators.block.BlockShapes;
 import com.pockyl.mekanismadvancedgenerators.block.GeneratorBlockType;
+import com.pockyl.mekanismadvancedgenerators.block.SolarPanelShapes;
 import com.pockyl.mekanismadvancedgenerators.blockentity.AdvancedCableBlockEntity;
 import com.pockyl.mekanismadvancedgenerators.blockentity.BigSolarGeneratorBlockEntity;
 import com.pockyl.mekanismadvancedgenerators.blockentity.SolarGeneratorBlockEntity;
@@ -74,7 +75,7 @@ public final class ModBlockTypes {
                     .<SolarGeneratorBlockEntity>create(() -> ModBlockEntities.SOLAR_PANELS.get(tier), ModLang.DESCRIPTION_SOLAR_GENERATOR)
                     .withGui(() -> ModContainers.SOLAR_PANELS.get(tier))
                     .withEnergyConfig(ModConfigs.STORAGE.solarStorage(tier, SolarSize.PANEL))
-                    .withCustomShape(BlockShapes.SOLAR_PANEL)
+                    .withCustomShape(SolarPanelShapes.of(tier))
                     .withSound(ModSounds.SOLAR_GENERATOR)
                     .with(AttributeUpgradeSupport.MUFFLING_ONLY, new SolarAttribute(tier, SolarSize.PANEL))
                     .replace(Attributes.ACTIVE)

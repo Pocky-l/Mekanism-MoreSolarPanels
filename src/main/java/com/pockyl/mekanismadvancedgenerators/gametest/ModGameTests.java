@@ -6,6 +6,7 @@ import mekanism.common.registries.MekanismItems;
 import mekanism.common.tile.TileEntityEnergyCube;
 import mekanism.common.util.StorageUtils;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.gametest.framework.GameTest;
 import net.minecraft.gametest.framework.GameTestHelper;
@@ -17,6 +18,7 @@ import net.minecraft.world.item.crafting.CraftingInput;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.neoforged.neoforge.gametest.GameTestHolder;
 import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
 
@@ -35,6 +37,7 @@ import com.pockyl.mekanismadvancedgenerators.tier.SolarSize;
 import com.pockyl.mekanismadvancedgenerators.tier.SolarTier;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * In-game tests, run headless by {@code gradlew runGameTestServer}.
@@ -229,6 +232,25 @@ public final class ModGameTests {
         ItemStack cosmic = recipe.get().value().assemble(input, level.registryAccess());
         helper.assertTrue(cosmic.is(ModBlocks.ENERGY_CUBES.get(AdvancedEnergyCubeTier.COSMIC).asItem()), "Crafted " + cosmic);
         assertValue(helper, "energy after the upgrade", StorageUtils.getEnergyContainer(cosmic, 0).getEnergy(), 100_000_000L);
+        helper.succeed();
+    }
+
+    @GameTest(template = "empty")
+    public static void panelHitboxesFollowTheirModels(GameTestHelper helper) {
+        // Model heights in pixels: the higher tiers have taller panels than the Advanced one.
+        Map<SolarTier, Integer> heights = Map.of(SolarTier.ADVANCED, 8, SolarTier.ULTIMATE, 9, SolarTier.QUANTUM, 9,
+                SolarTier.SINGULAR, 9, SolarTier.PHOTONIC, 10, SolarTier.CREATIVE, 10);
+        BlockPos pos = BlockPos.ZERO;
+        for (Map.Entry<SolarTier, Integer> entry : heights.entrySet()) {
+            for (Direction facing : Direction.Plane.HORIZONTAL) {
+                BlockState state = ModBlocks.SOLAR_PANELS.get(entry.getKey()).defaultState()
+                        .setValue(BlockStateProperties.HORIZONTAL_FACING, facing);
+                helper.setBlock(pos, state);
+                double top = helper.getBlockState(pos).getShape(helper.getLevel(), helper.absolutePos(pos)).max(Direction.Axis.Y);
+                helper.assertTrue(Math.abs(top * 16 - entry.getValue()) < 0.01,
+                        entry.getKey() + " facing " + facing + ": hitbox top " + top * 16 + " instead of " + entry.getValue());
+            }
+        }
         helper.succeed();
     }
 

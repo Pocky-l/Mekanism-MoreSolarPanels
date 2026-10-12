@@ -28,6 +28,8 @@ Versions before 2.3.0 are listed on [CurseForge](https://www.curseforge.com/mine
 - The mod was rebuilt from the ground up for easier updates. Worlds, configs and recipes from 2.2 keep working.
 
 ### Fixed
+- The hitbox of every solar panel now matches its model. Before, all tiers used the Advanced panel's box, so from the
+  Ultimate Hybrid panel on the outline and collision did not fit the taller panels, legs and rods.
 - The descriptions of the energy cubes and universal cables showed capacities 1000 times too high (for example
   "2,048 GJ" for the Cosmic Energy Cube, which holds 2.05 GJ). The cubes and cables themselves are unchanged.
 - Big solar generators and universal cables are no longer picked up by Mekanism's Cardboard Box and other block-moving

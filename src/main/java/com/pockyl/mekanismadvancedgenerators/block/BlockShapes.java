@@ -7,27 +7,14 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import static net.minecraft.world.level.block.Block.box;
 
 /**
- * Collision and outline shapes, one per horizontal facing (Mekanism's layout).
+ * Collision and outline shape of the big solar generators, one per horizontal facing (Mekanism's layout). The
+ * one-block panels have their own shape per tier in {@link SolarPanelShapes}.
  */
 public final class BlockShapes {
-    public static final VoxelShape[] SOLAR_PANEL = new VoxelShape[EnumUtils.HORIZONTAL_DIRECTIONS.length];
     /** Covers the base block, the pole and the 3x3 panel; the same model as Mekanism's Advanced Solar Generator. */
     public static final VoxelShape[] BIG_SOLAR_GENERATOR = new VoxelShape[EnumUtils.HORIZONTAL_DIRECTIONS.length];
 
     static {
-        VoxelShapeUtils.setShape(VoxelShapeUtils.combine(
-                box(0, 6, 0, 16, 8, 16), // panel
-                box(4, 0, 4, 12, 1, 12), // port
-                box(6, 4, 6, 10, 6, 10), // connector
-                box(7, 2, 7, 9, 4, 9), // rod
-                box(5, 1, 5, 6, 5, 6), // corner rods
-                box(10, 1, 5, 11, 5, 6),
-                box(5, 1, 10, 6, 5, 11),
-                box(10, 1, 10, 11, 5, 11),
-                box(6, 1, 6, 10, 2, 10), // pipe base
-                box(1, 5, 1, 15, 6, 15) // panel bottom
-        ), SOLAR_PANEL);
-
         VoxelShapeUtils.setShape(VoxelShapeUtils.combine(
                 box(6, -4, 6, 10, 25, 10), // pole
                 box(4, 22, 2, 6, 24, 14), // tubes
