@@ -6,8 +6,8 @@ cubes and universal cables that go far beyond Ultimate.
 ![Big solar generators, solar panels, energy cubes and cables of every tier](https://raw.githubusercontent.com/Pocky-l/Mekanism-MoreSolarPanels/main/docs/screenshots/big-generators.jpg)
 
 📦 **Requires** [NeoForge](https://neoforged.net) 1.21.1, [Mekanism](https://www.curseforge.com/minecraft/mc-mods/mekanism)
-and [Mekanism Generators](https://www.curseforge.com/minecraft/mc-mods/mekanism-generators) · install on the client and
-the server
+and [Mekanism Generators](https://www.curseforge.com/minecraft/mc-mods/mekanism-generators) 10.7.11 or newer · install on
+the client and the server
 
 ## ✨ Features
 

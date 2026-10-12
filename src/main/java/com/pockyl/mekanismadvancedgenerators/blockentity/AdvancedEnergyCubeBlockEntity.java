@@ -12,6 +12,7 @@ import net.minecraft.core.Holder;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import com.pockyl.mekanismadvancedgenerators.MekanismAdvancedGenerators;
 import com.pockyl.mekanismadvancedgenerators.tier.AdvancedEnergyCubeTier;
@@ -27,10 +28,17 @@ import java.util.function.LongSupplier;
  * Ultimate tier and this class overwrites three private final values after Mekanism created them: the container's
  * capacity and rate and the ejector's rate. Reusing the real cube keeps Mekanism's GUI, side config, renderer,
  * upgrade data and save format working.
+ * <p>
+ * Should a future Mekanism rename one of these fields, the cubes keep working with the values of Mekanism's Ultimate
+ * cube and the log says why, instead of crashing every world that contains a cube. The game test
+ * {@code energyCubesUseTheirTier} catches that case in development.
  */
 public class AdvancedEnergyCubeBlockEntity extends TileEntityEnergyCube {
+    @Nullable
     private static final Field CONTAINER_MAX_ENERGY = findField(BasicEnergyContainer.class, "maxEnergy");
+    @Nullable
     private static final Field CONTAINER_RATE = findField(EnergyCubeEnergyContainer.class, "rate");
+    @Nullable
     private static final Field EJECTOR_RATE = findField(TileComponentEjector.class, "energyEjectRate");
 
     public AdvancedEnergyCubeBlockEntity(Holder<Block> block, BlockPos pos, BlockState state) {
@@ -54,22 +62,28 @@ public class AdvancedEnergyCubeBlockEntity extends TileEntityEnergyCube {
         return holder;
     }
 
+    @Nullable
     private static Field findField(Class<?> owner, String name) {
         try {
             Field field = owner.getDeclaredField(name);
             field.setAccessible(true);
             return field;
-        } catch (NoSuchFieldException e) {
-            throw new IllegalStateException("Mekanism changed " + owner.getName() + "." + name
-                    + ": this version of " + MekanismAdvancedGenerators.MOD_ID + " does not support it", e);
+        } catch (ReflectiveOperationException | RuntimeException e) {
+            MekanismAdvancedGenerators.LOGGER.error("Mekanism no longer has {}.{}: energy cubes of {} fall back to the values "
+                    + "of Mekanism's Ultimate Energy Cube until the mod is updated", owner.getName(), name,
+                    MekanismAdvancedGenerators.MOD_ID, e);
+            return null;
         }
     }
 
-    private static void setField(Field field, Object target, Object value) {
+    private static void setField(@Nullable Field field, Object target, Object value) {
+        if (field == null) {
+            return;
+        }
         try {
             field.set(target, value);
-        } catch (IllegalAccessException e) {
-            throw new IllegalStateException("Cannot set " + field, e);
+        } catch (ReflectiveOperationException | RuntimeException e) {
+            MekanismAdvancedGenerators.LOGGER.error("Cannot set {}", field, e);
         }
     }
 }

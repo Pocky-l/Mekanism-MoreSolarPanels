@@ -91,7 +91,8 @@ Generators > Config):
 
 1. Install [NeoForge](https://neoforged.net) for Minecraft 1.21.1.
 2. Install [Mekanism](https://www.curseforge.com/minecraft/mc-mods/mekanism) and
-   [Mekanism Generators](https://www.curseforge.com/minecraft/mc-mods/mekanism-generators).
+   [Mekanism Generators](https://www.curseforge.com/minecraft/mc-mods/mekanism-generators) 10.7.11 or newer (tested with
+   every release from 10.7.11 to 10.7.19).
 3. Put this mod into the `mods` folder of the client and the server.
 
 Older versions for Minecraft 1.18.2, 1.19.2 and 1.20.1 are on CurseForge; their sources are in the branches of this

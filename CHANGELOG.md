@@ -22,6 +22,9 @@ Versions before 2.3.0 are listed on [CurseForge](https://www.curseforge.com/mine
   title nine times.
 - All items are in the shared "Pocky Mods" creative tab (and still in the vanilla tabs).
 - New logo.
+- Requires [Mekanism](https://www.curseforge.com/minecraft/mc-mods/mekanism) 10.7.11 or newer (tested with every
+  release up to 10.7.19). Older Mekanism versions have a different internal API and were
+  accepted although the mod cannot work with them; now the game asks to update Mekanism instead.
 - The mod was rebuilt from the ground up for easier updates. Worlds, configs and recipes from 2.2 keep working.
 
 ### Fixed
