@@ -1,26 +1,39 @@
-# eclipse
-bin
-*.launch
-.settings
-.metadata
-.classpath
-.project
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/**/build/
 
-# idea
-out
-*.ipr
+# IntelliJ IDEA
+.idea/
 *.iws
 *.iml
-.idea
+*.ipr
+out/
+!**/src/**/out/
+.run/
 
-# gradle
-build
-.gradle
+# Eclipse / VS Code
+.apt_generated
+.classpath
+.eclipse/
+.factorypath
+.project
+.settings
+bin/
+!**/src/**/bin/
+.vscode/
 
-# other
-eclipse
-run
-runs
-run-data
+# OS
+.DS_Store
+Thumbs.db
 
-repo
+# Minecraft
+run/
+run-data/
+run-server/
+!**/src/**/run/
+**/src/generated/**/.cache/
+repo/
+!**/src/**/repo/
+logs/

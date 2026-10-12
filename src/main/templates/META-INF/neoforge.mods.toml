@@ -1,16 +1,17 @@
 modLoader="javafml"
 loaderVersion="${loader_version_range}"
 license="${mod_license}"
+issueTrackerURL="${mod_url}/issues"
 
 [[mods]]
 modId="${mod_id}"
 version="${mod_version}"
 displayName="${mod_name}"
-authors="Pocky"
-
-description='''
-Advanced solar panel generators for Mekanism.
-'''
+authors="${mod_authors}"
+credits="Models and textures: akaleaf. Help: Yuik_Link. Chinese translation: UraraChiya, mc-kaishixiaxue."
+displayURL="${mod_url}"
+logoFile="logo.png"
+description='''${mod_description}'''
 
 [[dependencies.${mod_id}]]
     modId="neoforge"
@@ -29,13 +30,20 @@ Advanced solar panel generators for Mekanism.
 [[dependencies.${mod_id}]]
     modId="mekanism"
     type="required"
-    versionRange="[10.7,)"
+    versionRange="${mekanism_version_range}"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.${mod_id}]]
     modId="mekanismgenerators"
     type="required"
-    versionRange="[10.7,)"
+    versionRange="${mekanism_version_range}"
     ordering="AFTER"
     side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="jade"
+    type="optional"
+    versionRange="[15,)"
+    ordering="NONE"
+    side="CLIENT"
