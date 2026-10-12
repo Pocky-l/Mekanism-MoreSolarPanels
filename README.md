@@ -27,9 +27,9 @@
 - 🏗️ **Big solar generators** - a 3x3 panel on a pole, like Mekanism's Advanced Solar Generator, in all nine tiers:
   six times a panel of the same tier, and they heat a Thermal Evaporation Plant.
 - 🌦️ **Real Mekanism solar rules** - more power in hot, dry biomes, less in the rain, nothing under a roof or at night.
-- 🔋 **Energy cubes past Ultimate** - Cosmic, Supreme, Infinity and Galactic, up to 1,048,576 GJ, with Mekanism's side
-  configuration, energy core and charge slots.
-- ⚡ **Universal cables past Ultimate** - four glowing tiers up to 33,554,432 MJ/t that join Mekanism's energy networks.
+- 🔋 **Energy cubes past Ultimate** - Cosmic, Supreme, Infinity and Galactic, up to 1.05 TJ, with Mekanism's side
+  configuration, energy core and charge slots; upgrading a cube keeps its energy and settings.
+- ⚡ **Universal cables past Ultimate** - four glowing tiers up to 33.6 GJ/t that join Mekanism's energy networks.
 - 📱 **Energy tablets** - seven bigger tablets to charge your gear and craft the higher tiers.
 - 🔇 **Mekanism through and through** - Mekanism's GUIs, security, redstone control, comparators, configuration cards
   and the muffling upgrade.
@@ -51,10 +51,10 @@ Peak generation at noon in a temperate biome and the energy buffer; the output r
 
 | Tier | Energy cube | Universal cable |
 |---|---|---|
-| Cosmic | 2,048 GJ, 4.10 MJ/t out | 65,536 MJ/t |
-| Supreme | 16,384 GJ, 32.8 MJ/t out | 524,288 MJ/t |
-| Infinity | 131,072 GJ, 262 MJ/t out | 4,194,304 MJ/t |
-| Galactic | 1,048,576 GJ, 2.10 GJ/t out | 33,554,432 MJ/t |
+| Cosmic | 2.05 GJ, 4.10 MJ/t out | 65.5 MJ/t |
+| Supreme | 16.4 GJ, 32.8 MJ/t out | 524 MJ/t |
+| Infinity | 131 GJ, 262 MJ/t out | 4.19 GJ/t |
+| Galactic | 1.05 TJ, 2.10 GJ/t out | 33.6 GJ/t |
 
 ## Compatibility
 

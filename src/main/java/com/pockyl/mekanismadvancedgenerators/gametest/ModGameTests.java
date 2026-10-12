@@ -2,6 +2,7 @@ package com.pockyl.mekanismadvancedgenerators.gametest;
 
 import mekanism.common.config.IConfigTranslation;
 import mekanism.common.registries.MekanismBlocks;
+import mekanism.common.registries.MekanismItems;
 import mekanism.common.tile.TileEntityEnergyCube;
 import mekanism.common.util.StorageUtils;
 import net.minecraft.core.BlockPos;
@@ -12,6 +13,8 @@ import net.minecraft.locale.Language;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.CraftingInput;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.gametest.GameTestHolder;
@@ -55,6 +58,8 @@ public final class ModGameTests {
             "creative_solar_element",
             "improved_energy_tablet", "quantum_energy_tablet", "spectral_energy_tablet", "singular_energy_tablet",
             "light_absorbing_energy_tablet", "photonic_energy_tablet", "creative_energy_tablet");
+
+    private static final long RECIPES = 46;
 
     private ModGameTests() {
     }
@@ -198,6 +203,32 @@ public final class ModGameTests {
             assertValue(helper, tier + " tablet capacity", StorageUtils.getEnergyContainer(stack, 0).getMaxEnergy(),
                     tier.defaultMaxEnergy());
         }
+        helper.succeed();
+    }
+
+    @GameTest(template = "empty")
+    public static void allRecipesLoad(GameTestHelper helper) {
+        // A recipe with an unknown ingredient (a renamed Mekanism item) is skipped with only a log line.
+        long loaded = helper.getLevel().getRecipeManager().getRecipes().stream()
+                .filter(recipe -> recipe.id().getNamespace().equals(MekanismAdvancedGenerators.MOD_ID))
+                .count();
+        assertValue(helper, "loaded recipes", loaded, RECIPES);
+        helper.succeed();
+    }
+
+    @GameTest(template = "empty")
+    public static void energyCubeUpgradeKeepsEnergy(GameTestHelper helper) {
+        ItemStack ultimate = new ItemStack(MekanismBlocks.ULTIMATE_ENERGY_CUBE);
+        StorageUtils.getEnergyContainer(ultimate, 0).setEnergy(100_000_000L);
+        ItemStack alloy = new ItemStack(MekanismItems.ATOMIC_ALLOY.get());
+        ItemStack tablet = new ItemStack(ModItems.ENERGY_TABLETS.get(EnergyTabletTier.QUANTUM).get());
+        CraftingInput input = CraftingInput.of(3, 3, List.of(alloy, tablet, alloy, tablet, ultimate, tablet, alloy, tablet, alloy));
+        ServerLevel level = helper.getLevel();
+        var recipe = level.getRecipeManager().getRecipeFor(RecipeType.CRAFTING, input, level);
+        helper.assertTrue(recipe.isPresent(), "No recipe for the Cosmic Energy Cube");
+        ItemStack cosmic = recipe.get().value().assemble(input, level.registryAccess());
+        helper.assertTrue(cosmic.is(ModBlocks.ENERGY_CUBES.get(AdvancedEnergyCubeTier.COSMIC).asItem()), "Crafted " + cosmic);
+        assertValue(helper, "energy after the upgrade", StorageUtils.getEnergyContainer(cosmic, 0).getEnergy(), 100_000_000L);
         helper.succeed();
     }
 

@@ -16,9 +16,9 @@ the server
 - 🏗️ **Big solar generators** - a 3x3 panel on a pole, like Mekanism's Advanced Solar Generator, in all nine tiers:
   six times a panel of the same tier, and they heat a Thermal Evaporation Plant.
 - 🌦️ **Real Mekanism solar rules** - more power in hot, dry biomes, less in the rain, nothing under a roof or at night.
-- 🔋 **Energy cubes past Ultimate** - Cosmic, Supreme, Infinity and Galactic, up to 1,048,576 GJ, with Mekanism's side
-  configuration, energy core and charge slots.
-- ⚡ **Universal cables past Ultimate** - four glowing tiers up to 33,554,432 MJ/t that join Mekanism's energy networks.
+- 🔋 **Energy cubes past Ultimate** - Cosmic, Supreme, Infinity and Galactic, up to 1.05 TJ, with Mekanism's side
+  configuration, energy core and charge slots; upgrading a cube keeps its energy and settings.
+- ⚡ **Universal cables past Ultimate** - four glowing tiers up to 33.6 GJ/t that join Mekanism's energy networks.
 - 📱 **Energy tablets** - seven bigger tablets to charge your gear and craft the higher tiers.
 - 🔇 **Mekanism through and through** - Mekanism's GUIs, security, redstone control, comparators, configuration cards
   and the muffling upgrade.
