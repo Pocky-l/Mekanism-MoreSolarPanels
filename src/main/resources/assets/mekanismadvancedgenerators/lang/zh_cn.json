@@ -59,5 +59,6 @@
   "sound_event.mekanismadvancedgenerators.tile.generator.solar": "Solar Panel humming",
 
   "gui.mekanismadvancedgenerators.producing.amount": "发电: %1$s/t",
-  "gui.mekanismadvancedgenerators.output_rate.short": "输出: %1$s/t"
+  "gui.mekanismadvancedgenerators.output_rate.short": "输出: %1$s/t",
+  "tooltip.mekanismadvancedgenerators.peak_generation": "峰值发电: %1$s/t"
 }

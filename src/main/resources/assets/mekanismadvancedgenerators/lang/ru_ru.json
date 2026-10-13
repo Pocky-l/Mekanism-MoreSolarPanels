@@ -242,5 +242,6 @@
   "configuration.mekanismadvancedgenerators.gear.creative_energy_tablet.max_energy": "Ёмкость",
   "configuration.mekanismadvancedgenerators.gear.creative_energy_tablet.max_energy.tooltip": "Сколько Дж может хранить творческий энергетический планшет.",
   "configuration.mekanismadvancedgenerators.gear.creative_energy_tablet.charge_rate": "Скорость зарядки",
-  "configuration.mekanismadvancedgenerators.gear.creative_energy_tablet.charge_rate.tooltip": "Сколько Дж/т творческий энергетический планшет может принять или отдать."
+  "configuration.mekanismadvancedgenerators.gear.creative_energy_tablet.charge_rate.tooltip": "Сколько Дж/т творческий энергетический планшет может принять или отдать.",
+  "tooltip.mekanismadvancedgenerators.peak_generation": "Пиковая выработка: %1$s/t"
 }

@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 Versions before 2.3.0 are listed on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/mekanism-advancedgenerators/files).
 
+## [2.3.1] - Unreleased
+### Added
+- Solar panels and big solar generators show their peak generation and energy buffer in the tooltip, right under the
+  name, so the tiers can be compared in the inventory. The numbers follow the server's config.
+
 ## [2.3.0] - 2026-10-13
 ### Added
 - [Jade](https://www.curseforge.com/minecraft/mc-mods/jade) shows how much a solar panel or big solar generator is

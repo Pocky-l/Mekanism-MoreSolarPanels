@@ -17,7 +17,8 @@ public enum ModLang implements ILangEntry {
     PRODUCING("gui", "producing.amount"),
     OUTPUT_RATE_SHORT("gui", "output_rate.short"),
     SEES_SUN("gui", "sees_sun"),
-    NO_SUN("gui", "no_sun");
+    NO_SUN("gui", "no_sun"),
+    PEAK_GENERATION("tooltip", "peak_generation");
 
     private final String key;
 

@@ -242,5 +242,6 @@
   "configuration.mekanismadvancedgenerators.gear.creative_energy_tablet.max_energy": "Max Energy",
   "configuration.mekanismadvancedgenerators.gear.creative_energy_tablet.max_energy.tooltip": "Maximum amount of Joules the Creative Energy Tablet can store.",
   "configuration.mekanismadvancedgenerators.gear.creative_energy_tablet.charge_rate": "Charge Rate",
-  "configuration.mekanismadvancedgenerators.gear.creative_energy_tablet.charge_rate.tooltip": "Joules/t the Creative Energy Tablet can receive or give."
+  "configuration.mekanismadvancedgenerators.gear.creative_energy_tablet.charge_rate.tooltip": "Joules/t the Creative Energy Tablet can receive or give.",
+  "tooltip.mekanismadvancedgenerators.peak_generation": "Peak generation: %1$s/t"
 }

@@ -59,5 +59,6 @@
   "sound_event.mekanismadvancedgenerators.tile.generator.solar": "Гудіння сонячної панелі",
 
   "gui.mekanismadvancedgenerators.producing.amount": "Виробляється: %1$s/t",
-  "gui.mekanismadvancedgenerators.output_rate.short": "Вихід: %1$s/t"
+  "gui.mekanismadvancedgenerators.output_rate.short": "Вихід: %1$s/t",
+  "tooltip.mekanismadvancedgenerators.peak_generation": "Пікова генерація: %1$s/t"
 }

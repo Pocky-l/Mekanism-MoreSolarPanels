@@ -22,6 +22,7 @@ import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
+import net.neoforged.neoforge.common.NeoForge;
 
 import com.pockyl.mekanismadvancedgenerators.MekanismAdvancedGenerators;
 import com.pockyl.mekanismadvancedgenerators.client.gui.AdvancedEnergyCubeScreen;
@@ -40,6 +41,7 @@ public final class MekanismAdvancedGeneratorsClient {
         modBus.addListener(MekanismAdvancedGeneratorsClient::registerScreens);
         modBus.addListener(MekanismAdvancedGeneratorsClient::registerItemDecorations);
         modBus.addListener(MekanismAdvancedGeneratorsClient::registerClientExtensions);
+        NeoForge.EVENT_BUS.addListener(SolarTooltips::onTooltip);
     }
 
     private static void setup(FMLClientSetupEvent event) {
